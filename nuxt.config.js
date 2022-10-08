@@ -2,7 +2,8 @@
 export default defineNuxtConfig({
     modules: [
         '@nuxtjs/tailwindcss',
-        '@nuxt/content'
+        '@nuxt/content',
+        '@nuxtjs/color-mode'
     ],
     content: {
         markdown: {
@@ -15,6 +16,15 @@ export default defineNuxtConfig({
                 default: 'github-light',
                 dark: 'github-dark'
             }
-        }
-    }
+        },
+        documentDriven: true
+    },
+    colorMode: {
+        classSuffix: ''
+    },
+    css: [
+        '@/assets/styles/main.css',
+        '@/assets/styles/typography.css',
+        '@/assets/styles/content.scss'
+    ]
 })
