@@ -1,9 +1,8 @@
-import dayjs from "dayjs";
-
-const dateFormat = (date) => {
-    dayjs.locale('fr');
-    const k = dayjs(date);
-    return k.isValid() ? k.format('DD MMM YYY').toString() :  '';
+export default function formatDate(date) {
+    return new Date(date).toLocaleDateString('fr-fr', {
+        year: 'numeric',
+        month: 'long',
+        day: '2-digit',
+        timeZone: 'utc'
+    })
 }
-
-export default dateFormat;

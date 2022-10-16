@@ -27,7 +27,7 @@ const showSearch = () => {
         <ul class="flex justify-center items-center space-x-6">
           <li>
             <nuxt-link
-                to="/tutos"
+                to="/blog"
                 active-class="exact-navigation"
                 class="flex px-4 items-center py-2 font-medium slick-hover-blue cursor-pointer rounded-sm"
             >
@@ -44,7 +44,7 @@ const showSearch = () => {
                 />
               </svg>
             </span>
-              <p class="text-sm">Tutos</p>
+              <p class="text-sm">Articles</p>
             </nuxt-link>
           </li>
           <li>

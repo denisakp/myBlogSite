@@ -1,8 +1,8 @@
 ---
 title: Recherche plain texte sur Cloud Firestore à l'aide de MeiliSearch 4 - Événements
 description: Configuration et connexion de l'API à l'instance MeiliSearch
-tags: [gcp, javascript, nodejs, cloud-functions,vm, meilisearch, firestore]
-topics: [gcp, nodejs]
+tags: [googlecloud, javascript, nodejs, cloud-functions,vm, meilisearch, firestore]
+topics: [googlecloud, nodejs]
 date: 2022-01-22
 slug: recherche-plain-texte-sur-cloud-firestore-a-laide-de-meilisearch-4-evenements
 next: recherche-plain-texte-sur-cloud-firestore-a-laide-de-meilisearch-5-problemes

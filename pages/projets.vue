@@ -2,11 +2,10 @@
 import projects from "~/data/project";
 </script>
 
-
 <template>
   <div class="page-bg">
     <div class="container">
-        <h5 class="">Projets ({{ projects.length }})</h5>
+        <h5>Projets ({{ projects.length }})</h5>
 
         <div class="flex flex-wrap my-4">
           <div

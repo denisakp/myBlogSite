@@ -15,7 +15,5 @@
     "sass": "^1.54.9",
     "sass-loader": "10"
   },
-  "dependencies": {
-    "dayjs": "^1.11.5"
-  }
+  "dependencies": {}
 }

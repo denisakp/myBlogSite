@@ -1,8 +1,8 @@
 ---
 title: Sauvegarder l'état de Terraform sur Google Cloud Storage
 description: Comment sauvegarder l'état de Terraform sur Google Cloud Storage
-tags: [terraform, gcp]
-topics: [terraform, gcp]
+tags: [terraform, googlecloud]
+topics: [terraform, googlecloud]
 date: 2021-05-05
 slug: sauvegarder-letat-de-terraform-sur-google-cloud-storage
 ---

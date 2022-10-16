@@ -1,8 +1,8 @@
 ---
 title: Recherche plain texte sur Cloud Firestore à l'aide de MeiliSearch 3 - MeiliSearch
 description: Déployer et configurer MeiliSearch dans une machine virtuelle sur Google Compute Engine
-tags: [gcp, javascript, nodejs, cloud-functions,vm, meilisearch, firestore]
-topics: [gcp, nodejs]
+tags: [googlecloud, javascript, nodejs, cloud-functions,vm, meilisearch, firestore]
+topics: [googlecloud, nodejs]
 date: 2022-01-21
 slug: recherche-plain-texte-sur-cloud-firestore-a-laide-de-meilisearch-3-meilisearch
 next: recherche-plain-texte-sur-cloud-firestore-a-laide-de-meilisearch-4-evenements

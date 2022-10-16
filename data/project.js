@@ -33,7 +33,7 @@ const projects = [
         },
         {
             "title": "Loopbin Website",
-            "description": "Blog Loopbin, ce blog",
+            "description": "Blog Loopbin, ce ikblog",
             "date": "April 2022",
             "tags": [
                 "nuxtjs",

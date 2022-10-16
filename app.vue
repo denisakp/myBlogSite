@@ -1,17 +1,8 @@
-<template>
-  <div class="w-full bg-white dark:bg-dark-high text-dark-high dark:text-white" :class="$colorMode.preference === 'dark' ? 'dark' : ''">
-    <Header />
-    <div class="pt-20 md:pt-24 min-h-screen">
-      <NuxtPage />
-    </div>
-    <BottomHeader />
-  </div>
-</template>
-
 <script setup>
-import {useHead} from "nuxt/app";
+import {useHead, useRoute} from "nuxt/app";
+import Header from '~/components/shared/Header.vue';
+import BottomHeader from '~/components/shared/BottomHeader.vue';
 const route = useRoute()
-
 
 useHead({
   titleTemplate: (title) => `Denis AKPAGNONITE - ${title}`,
@@ -34,9 +25,15 @@ useHead({
     { name: 'twitter:description', content: 'Description de mon site web' },
     { name: 'twitter:image', content: 'https://metatags.io/assets/meta-tags-16a33a6a8531e519cc0936fbba0ad904e52d35f34a46c97a2c9f6f7dd7d336f2.png' },
   ],
-
 })
-import Header from '~/components/shared/Header.vue';
-import BottomHeader from '~/components/shared/BottomHeader.vue';
-
 </script>
+
+<template>
+  <div class="w-full bg-white dark:bg-dark-high text-dark-high dark:text-white" :class="$colorMode.preference === 'dark' ? 'dark' : ''">
+    <Header />
+    <div class="pt-20 md:pt-24 min-h-screen">
+      <NuxtPage />
+    </div>
+    <BottomHeader />
+  </div>
+</template>

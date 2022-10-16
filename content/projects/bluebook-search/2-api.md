@@ -1,8 +1,8 @@
 ---
 title: Recherche plain texte sur Cloud Firestore à l'aide de MeiliSearch 2 - api
 description: Créer une API avec Cloud Firestore et Cloud Functions
-tags: [gcp, javascript, nodejs, cloud-functions,vm, meilisearch, firestore]
-topics: [gcp, nodejs]
+tags: [googlecloud, javascript, nodejs, cloud-functions,vm, meilisearch, firestore]
+topics: [googlecloud, nodejs]
 date: 2022-01-20 
 slug: recherche-plain-texte-sur-cloud-firestore-a-laide-de-meilisearch-2-api
 next: recherche-plain-texte-sur-cloud-firestore-a-laide-de-meilisearch-3-meilisearch

@@ -1,13 +1,5 @@
-<template>
-
-</template>
-
-<script>
-export default {
-  name: "index"
-}
+<script setup>
+  definePageMeta({
+    middleware: ['redirect']
+  })
 </script>
-
-<style scoped>
-
-</style>

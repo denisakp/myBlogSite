@@ -1,5 +1,4 @@
 <script setup>
-import dateFormat from "../utils/date";
 
 defineProps({
   post: {
@@ -8,9 +7,8 @@ defineProps({
   }
 })
 
-const fDate = (date) => {
-  dateFormat(date)
-}
+import formatDate from "../utils/date";
+
 </script>
 
 <template>
@@ -18,7 +16,7 @@ const fDate = (date) => {
       class="h-full  border-dark-low dark:border-white dark:border-opacity-20 border rounded-sm hover:shadow-sm"
   >
     <nuxt-link
-        :to="`/blog/${post._path}`"
+        :to="`/blog/${post.slug}`"
         class="w-full"
         style="text-decoration: none"
     >
@@ -46,7 +44,7 @@ const fDate = (date) => {
               v-if="post.date !== 'Invalid date'"
               class="text-sm text-gray-400 mt-3 ml-2"
           >
-            {{ fDate(post.date) }}
+            {{ formatDate(post.date) }}
           </p>
         </div>
       </div>

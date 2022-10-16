@@ -1,9 +1,39 @@
+<script setup>
+
+definePageMeta({
+  title: 'Accueil',
+  description: 'My page best description ever'
+})
+
+const {data: navigation } = await useAsyncData("navigation", () => {
+  return fetchContentNavigation(queryContent('/'))
+});
+
+const {data: latestArticles} = await useAsyncData('latestArticles', () => {
+  return queryContent('/')
+      .only([
+        'slug',
+        'title',
+        'description',
+        'date',
+        'path',
+        'tags',
+        'topics',
+        'path',
+        'dir',
+      ])
+      .limit(5)
+      .sort({ date: -1})
+      .find()
+})
+</script>
+
 <template>
   <div class="page-bg">
     <div class="container">
       <div>
         <h3>Sujets disponibles</h3>
-        <Topics :topics="navigation[0].children.sort()" />
+        <Topics :topics="navigation" />
       </div>
 
       <div class="mt-8">
@@ -20,29 +50,3 @@
     </div>
   </div>
 </template>
-
-<script setup>
-definePageMeta({
-  title: 'Accueil',
-  description: 'My page best description ever'
-})
-
-const {data: navigation } = await useAsyncData("navigation", () => {
-  return fetchContentNavigation(queryContent("blog"))
-});
-
-const latestArticles = await queryContent('blog')
-    .only([
-      'slug',
-      'title',
-      'description',
-      'date',
-      'path',
-      'tags',
-      'topics',
-      'path',
-      'dir',
-    ])
-    .limit(5)
-    .find()
-</script>
