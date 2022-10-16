@@ -3,15 +3,34 @@ import {computed, ref} from "vue";
 import {useRoute} from "nuxt/app";
 const route = useRoute()
 
-const props = defineProps(['total', 'perPage'])
+const props = defineProps(['total', 'perPage']);
 
-const totalPages = computed(() => Math.ceil(props.total / props.perPage))
+const totalPages = computed(() => Math.ceil(props.total / props.perPage));
 
 const currentPage = computed(() => parseInt(route.params.page));
 
-const nextPage = computed(() => (currentPage.value < totalPages.value) ? currentPage.value + 1 : totalPages.value)
+const nextPage = computed(() => (currentPage.value < totalPages.value) ? currentPage.value + 1 : totalPages.value);
 
 const prevPage = computed(() => currentPage.value > 1 ? currentPage.value - 1 : 1);
+
+const startPage = computed(() => (currentPage.value === 1) ? 1 : (currentPage.value === totalPages.value) ? totalPages.value - totalPages.value + 1 : currentPage.value - 1);
+
+const endPage = computed(() => Math.min(startPage.value + totalPages.value - 1, totalPages.value));
+
+const pages = computed(() => {
+  const data = [];
+  for (let i = startPage.value; i <= endPage.value; i++) {
+    data.push({
+      name: i,
+      isDisabled: i === currentPage.value
+    })
+  }
+  return data;
+});
+
+const isPageActive = (page) => {
+  return currentPage.value === page
+}
 
 </script>
 
@@ -25,7 +44,6 @@ const prevPage = computed(() => currentPage.value > 1 ? currentPage.value - 1 : 
             :class="{ disabled: currentPage === 1 }"
         >
           <p aria-hidden="true">First</p>
-          {{ currentPage}}
         </nuxt-link>
 
         <nuxt-link
@@ -34,7 +52,16 @@ const prevPage = computed(() => currentPage.value > 1 ? currentPage.value - 1 : 
             :class="{ disabled: currentPage === 1 }"
         >
           <p aria-hidden="true">&laquo;</p>
-          {{ prevPage }}
+        </nuxt-link>
+
+        <nuxt-link
+            v-for="page in pages"
+            :key="page.name"
+            class="pager-item"
+            :class="{ active: isPageActive(page.name) }"
+            :to="{ name: 'blog-page-page', params: { page: page.name} }"
+        >
+          <p>{{ page.name }}</p>
         </nuxt-link>
 
         <nuxt-link
@@ -44,7 +71,6 @@ const prevPage = computed(() => currentPage.value > 1 ? currentPage.value - 1 : 
             :class="{ disabled: currentPage === totalPages }"
         >
           <p aria-hidden="true">&raquo;</p>
-          {{ nextPage }}
         </nuxt-link>
 
         <nuxt-link
@@ -53,7 +79,6 @@ const prevPage = computed(() => currentPage.value > 1 ? currentPage.value - 1 : 
             :to="{ name: 'blog-page-page', params: { page: totalPages } }"
         >
           <p aria-hidden="true">Last</p>
-          {{ totalPages }}
         </nuxt-link>
 
       </div>
