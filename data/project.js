@@ -10,7 +10,7 @@ const projects = [
                 "meiliSearch"
             ],
             "github": "https://github.com/CorneilleEdi/bluebook-cloud-functions-meilisearch",
-            "preview": "https://loopbin.dev/tutos/recherche-plain-texte-sur-cloud-firestore-a-laide-de-meilisearch-1-introduction"
+            "preview": "https://loopbin.dev/blog/recherche-plain-texte-sur-cloud-firestore-a-laide-de-meilisearch-1-introduction"
         },
         {
             "title": "TipTap",

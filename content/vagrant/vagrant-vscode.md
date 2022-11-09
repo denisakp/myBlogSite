@@ -11,8 +11,6 @@ slug: configurer-un-environnement-de-developpement-nodejs-avec-vagrant-et-vscode
 
 Dans ce tutoriel, nous allons mettre en place un environnement de développement avec NodeJS et y connecter notre éditeur de texte VsCode.
 
-<action-button type="github" text="Code sur Github" link="https://github.com/CorneilleEdi/loopbin-tutos/tree/main/vagrant-vscode"></action-button>
-
 Notre environnement de développement sera pour un projet nommé Sparky. Nous allons y développer un API pour le backend avec NodeJs,NPM, MongoDB, PM2 et NGINX (notre environnement de développement doit ressembler le plus possible à notre environnement de déploiement). Nous allons utiliser VsCode depuis notre machine. Pour cela il nous faudra connecter VSCode à la machine virtuelle en SSH pour y coder directement.
 
 Allons y
@@ -237,10 +235,3 @@ Un avantage est que VSCode se connecte avec l'utilisateur vagrant qui a les perm
 ![remote vscode](/images/vagrant/remote.png)
 
 Notre éditeur est connecté et prêt.
-
-<script>
-  import ActionButton from "~/components/ActionButton";
-  export default {
-    components: {ActionButton}
-  }
-</script>

@@ -14,7 +14,7 @@ Si il y a une chose que nous utilisons tout le temps dans nos navigateur se sont
 NB: il existe plusieurs types d’URL. Nous allons seulement nous concentrer sur les URL web comme
 
 ```
-https://www.loopbin.dev/tutos/redis?dark=true&type=short#installation
+https://www.loopbin.dev/blog/redis?dark=true&type=short#installation
 ```
 
 ## Definition

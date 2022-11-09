@@ -41,7 +41,7 @@ Heureusement pour nous, ces versions gardent tous plusieurs similarités.
 
 Ah oui, bien sûr qu’il va falloir préciser la ressource que nous voulons contacter avec notre requête. Exemple: api.google.com/user
 
-Pour plus d’informations sur les URLs, veuillez lire mon article à propos de ce sujet. [C'est quoi une URL web?](https://loopbin.dev/tutos/c-est-quoi-une-url-web/)
+Pour plus d’informations sur les URLs, veuillez lire mon article à propos de ce sujet. [C'est quoi une URL web?](https://loopbin.dev/blog/c-est-quoi-une-url-web/)
 
 ```
 https://jsonplaceholder.typicode.com/todos/

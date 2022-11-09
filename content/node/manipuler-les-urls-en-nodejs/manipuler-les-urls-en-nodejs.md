@@ -24,7 +24,7 @@ Dans ce tuto, nous allons explorer le module URL inclut dans NodeJs par défaut.
 Le première chose serait d’avoir une URL à décoder 😅. Dans ce cas , nous allons travailler avec les urls suivantes:
 
 ```js
-https://www.loopbin.dev/tutos/redis?dark=true&type=short#installation
+https://www.loopbin.dev/blog/redis?dark=true&type=short#installation
 ```
 
 ```js
@@ -39,7 +39,7 @@ Pour commencer, je vais passer l'URL comme constructeur pour que les information
 
 ```js
 const url = new URL(
-  'https://www.loopbin.dev/tutos/redis?dark=true&type=short#installation'
+  'https://www.loopbin.dev/blog/redis?dark=true&type=short#installation'
 )
 ```
 
@@ -64,7 +64,7 @@ En jetant un coup d'oeil à la variable url, nous constatons que nous avons
 
 ```js
 URL {
-  href: 'https://www.loopbin.dev/tutos/redis?dark=true&type=short#installation',
+  href: 'https://www.loopbin.dev/blog/redis?dark=true&type=short#installation',
   origin: 'https://www.loopbin.dev',
   protocol: 'https:',
   username: '',
@@ -72,7 +72,7 @@ URL {
   host: 'www.loopbin.dev',
   hostname: 'www.loopbin.dev',
   port: '',
-  pathname: '/tutos/redis',
+  pathname: '/blog/redis',
   search: '?dark=true&type=short',
   searchParams: URLSearchParams { 'dark' => 'true', 'type' => 'short' },
   hash: '#installation'
@@ -83,7 +83,7 @@ A ce point , nous pouvons facilement accéder au information avec les accesseurs
 
 ```js
 const url = new URL(
-  'https://www.loopbin.dev/tutos/redis?dark=true&type=short#installation'
+  'https://www.loopbin.dev/blog/redis?dark=true&type=short#installation'
 )
 console.log(url.protocol)
 console.log(url.host)
@@ -94,7 +94,7 @@ console.log(url.search)
 ```js
 https:
 www.loopbin.dev
-/tutos/redis
+/blog/redis
 ?dark=true&type=short
 ```
 

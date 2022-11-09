@@ -90,7 +90,6 @@ exemple
 docker build -t ghcr.io/corneilleedi/expresso-multistages-actions:2.0.0 -f Dockerfile.multistage .
 ```
 
-<action-button type="github" text="Code Source" link="https://github.com/CorneilleEdi/docker-meet/tree/main/expresso"></action-button>
 
 ### Partager l’image
 

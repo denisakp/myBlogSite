@@ -9,7 +9,6 @@ slug: manipuler-les-urls-en-java
 
 Java ainsi que plusieurs autres langages de programmation comme le Javascript ou Dart contient une librairie qui permet aux programmeurs de jouer avec les urls. Dans ce tuto, nous allons explorer les méthodes offertes par le langage pour extraire les informations d'une url ainsi que générer une URL.
 
-<action-button type="github" text="Code sur Github" link="https://github.com/CorneilleEdi/loopbin-tutos/tree/main/manipuler-les-urls-en-java"></action-button>
 
 Dans java , il existe deux classes en Java pour interagir avec les URLs:
 
@@ -23,14 +22,14 @@ Dans java , il existe deux classes en Java pour interagir avec les URLs:
 Contrairement à la classe URL en Javascript, celle de Java donne assez peu d'informations sur l'URL qu'elle reçoit en paramètre.
 
 ```java
-URL url = new URL("https://www.loopbin.dev/tutos/redis?dark=true&type=short#installation");
+URL url = new URL("https://www.loopbin.dev/blog/redis?dark=true&type=short#installation");
 ```
 
 Le code si dessus retourne une erreur MalformedURLException si l'URL passé en parametre n'est pas valide ou bien formattée. Il seraint judicieux d'anticiper l'erreur
 
 ```java
 try {
-    URL url = new URL("https://www.loopbin.dev/tutos/redis?dark=true&type=short#installation");
+    URL url = new URL("https://www.loopbin.dev/blog/redis?dark=true&type=short#installation");
 } catch (MalformedURLException e) {
     e.printStackTrace();
 }
@@ -60,7 +59,7 @@ import java.net.MalformedURLException;
 public class Decoder {
     public static void main(String[] args) {
         try {
-            URL url = new URL("https://www.loopbin.dev/tutos/redis?dark=true&type=short#installation");
+            URL url = new URL("https://www.loopbin.dev/blog/redis?dark=true&type=short#installation");
 
             System.out.println("protocole = " + url.getProtocol());
             System.out.println("domaine = " + url.getAuthority());
@@ -83,9 +82,9 @@ protocole = https
 domaine = www.loopbin.dev
 host = www.loopbin.dev
 port = -1
-chemin = /tutos/redis
+chemin = /blog/redis
 query = dark=true&type=short
-cheminComplet = /tutos/redis?dark=true&type=short
+cheminComplet = /blog/redis?dark=true&type=short
 hash = installation
 ```
 
@@ -103,7 +102,6 @@ La classe URI peut permettre d'avoir encore plus d'informations sur l'URI ou l'U
 
 > Dans le cas de l'URI, l'erreur dans le cas d'une malformation est l'erreur URISyntaxException
 
-<action-button type="doc" text="Documentation de la classe URI" link="https://docs.oracle.com/javase/8/docs/api/java/net/URI.html"></action-button>
 
 ```java
 import java.net.URISyntaxException;
@@ -139,7 +137,6 @@ information d'authentification = corneille:verniselle
 
 ## Construire une URL
 
-<action-button type="doc" text="Exemple officiel" link="https://docs.oracle.com/javase/tutorial/networking/urls/creatingUrls.html"></action-button>
 
 ### Avec la classe URL
 
@@ -154,7 +151,7 @@ public class Encoder {
         try {
             String protocol = "https";
             String host = "loopbin.dev";
-            String file = "/tutos/redis";
+            String file = "/blog/redis";
             int port = 80;
             URL url = new URL(protocol, host, port, file);
 
@@ -222,7 +219,6 @@ Le regroupement de connexions réduit la latence des requêtes (si HTTP / 2 n'es
 Transparent GZIP réduit la taille des téléchargements.
 La mise en cache des réponses évite complètement le réseau pour les demandes répétées.
 
-<action-button type="package" text="Librairie OkHTTP" link="https://square.github.io/okhttp/"></action-button>
 
 Exemple
 
@@ -240,10 +236,8 @@ System.out.println(url);
 
 **`https://hc.apache.org/httpcomponents-client-4.3.x/quickstart.html`**
 
-<action-button type="package" text="Librairie Apache client" link="https://hc.apache.org/httpcomponents-client-4.3.x/quickstart.html"></action-button>
 
 ---
 
 N'hésitez pas à jeter un coup d'oeil aux test unitaire sur github
 
-<action-button type="github" text="Test unitaire" link="https://github.com/CorneilleEdi/loopbin-tutos/blob/main/manipuler-les-urls-en-java/src/test/java/EncodeurTest.java"></action-button>

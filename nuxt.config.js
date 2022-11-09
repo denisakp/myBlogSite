@@ -6,18 +6,18 @@ export default defineNuxtConfig({
         '@nuxtjs/color-mode'
     ],
     content: {
-        markdown: {
-            prism: {
-                theme: false
-            }
-        },
         highlight: {
             theme: {
-                default: 'github-light',
+                default: 'material-palenight',
                 dark: 'github-dark'
             }
         },
-        documentDriven: true
+        markdown: {
+            toc: {
+                depth: 5,
+                searchDepth: 5
+            }
+        }
     },
     colorMode: {
         classSuffix: ''

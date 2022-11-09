@@ -12,7 +12,7 @@
         >
           <li>
             <nuxt-link
-                to="/tutos"
+                to="/blog"
                 active-class="bg-white bg-opacity-30"
                 class="flex flex-col py-2 px-3 items-center hover:bg-white hover:bg-opacity-40 cursor-pointer rounded-sm"
             >
