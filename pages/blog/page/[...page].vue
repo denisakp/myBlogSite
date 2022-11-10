@@ -4,11 +4,6 @@ import {useAsyncData, useRoute} from "nuxt/app";
 const route = useRoute()
 import Paginate from '../../../components/shared/Paginate.vue';
 
-definePageMeta({
-  title: 'Accueil',
-  description: 'My page best description ever'
-})
-
 const articlesCount = (await queryContent('/').find()).length
 
 const perPage = ref(14)
@@ -24,22 +19,7 @@ const skipNumber = () => {
 }
 
 const {data: articles, refresh} = await useAsyncData("articles", () => {
-  return  queryContent('/')
-      .only([
-        'slug',
-        'title',
-        'description',
-        'date',
-        'path',
-        'tags',
-        'topics',
-        'path',
-        'dir',
-      ])
-      .skip(skipNumber())
-      .limit(perPage.value)
-      .sort({date: -1})
-      .find()
+  return  queryContent('/').skip(skipNumber()).limit(perPage.value).sort({date: -1}).find()
 })
 
 onMounted(() => {
@@ -50,22 +30,16 @@ onMounted(() => {
 
 <template>
   <div class="page-bg">
-
     <div class="container">
-
       <h5> Articles ({{ articlesCount }})</h5>
-
       <div class="flex flex-wrap my-4">
         <div class="p-2 lg:w-1/2 w-full" v-for="(post, index) in articles" :key="index">
           <Post :post="post" />
         </div>
       </div>
-
       <div class="w-full flex justify-center items-center">
         <Paginate :total="articlesCount" :per-page="perPage" />
       </div>
-
     </div>
-
   </div>
 </template>

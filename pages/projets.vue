@@ -82,7 +82,6 @@ import projects from "~/data/project";
             </div>
           </div>
         </div>
-
     </div>
   </div>
 </template>
