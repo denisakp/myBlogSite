@@ -1,4 +1,6 @@
 // https://v3.nuxtjs.org/api/configuration/nuxt.config
+import { defineNuxtConfig } from "nuxt/config"
+
 export default defineNuxtConfig({
     modules: [
         '@nuxtjs/tailwindcss',
@@ -10,12 +12,6 @@ export default defineNuxtConfig({
             theme: {
                 default: 'material-palenight',
                 dark: 'github-dark'
-            }
-        },
-        markdown: {
-            toc: {
-                depth: 5,
-                searchDepth: 5
             }
         }
     },

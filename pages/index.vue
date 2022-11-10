@@ -1,31 +1,15 @@
 <script setup>
 
 definePageMeta({
-  title: 'Accueil',
-  description: 'My page best description ever'
+  key: (route) => route.fullpath
 })
 
 const {data: navigation } = await useAsyncData("navigation", () => {
   return fetchContentNavigation(queryContent('/'))
 });
 
-const {data: latestArticles} = await useAsyncData('latestArticles', () => {
-  return queryContent('/')
-      .only([
-        'slug',
-        'title',
-        'description',
-        'date',
-        'path',
-        'tags',
-        'topics',
-        'path',
-        'dir',
-      ])
-      .limit(5)
-      .sort({ date: -1})
-      .find()
-})
+const query = { limit: 10, sort: { date: -1}, only: ['title', 'description', 'tags', '_path', 'date']}
+
 </script>
 
 <template>
@@ -39,11 +23,20 @@ const {data: latestArticles} = await useAsyncData('latestArticles', () => {
       <div class="mt-8">
         <h3>Derniers articles</h3>
         <section class="space-y-4 mt-8">
-          <Post
-              v-for="(post, index) in latestArticles"
-              :key="index"
-              :post="post"
-          />
+          <ContentList :query="query">
+
+            <template v-slot="{ list }">
+              <Post v-for="(post, index) in list" :key="index" :post="post" />
+            </template>
+
+            <template #not-found>
+              <p> No articles found</p>
+            </template>
+
+            <template #empty>
+              <p>No articles yet</p>
+            </template>
+          </ContentList>
         </section>
       </div>
 

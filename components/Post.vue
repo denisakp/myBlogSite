@@ -1,6 +1,6 @@
 <script setup>
 
-defineProps({
+const props = defineProps({
   post: {
     type: Object,
     required: true
@@ -12,27 +12,20 @@ import formatDate from "../utils/date";
 </script>
 
 <template>
-  <div
-      class="h-full  border-dark-low dark:border-white dark:border-opacity-20 border rounded-sm hover:shadow-sm"
-  >
-    <nuxt-link
-        :to="`/blog/${post.slug}`"
-        class="w-full"
-        style="text-decoration: none"
-    >
+  <div class="h-full border-dark-low dark:border-white dark:border-opacity-20 border rounded-sm hover:shadow-sm">
+    <NuxtLink :to="`/blog${props.post._path}`" class="w-full" style="text-decoration: none">
       <div class="p-4  flex flex-col h-full">
         <p class="text-dark-high dark:text-white font-medium">
-          {{ post.title }}
+          {{ props.post.title }}
         </p>
-        <p
-            class="flex-1 mt-2 text-sm leading-5 text-dark dark:text-white dark:text-opacity-80"
-        >
-          {{ post.description }}
+        <p class="flex-1 mt-2 text-sm leading-5 text-dark dark:text-white dark:text-opacity-80">
+          {{ props.post.description }}
         </p>
+
         <div class="flex flex-wrap items-center mt-2">
           <div class="flex flex-grow mr-2 flex-wrap">
             <p
-                v-for="tag in post.tags"
+                v-for="tag in props.post.tags"
                 :key="tag"
                 class="ml-2 mt-1 text-xs py-1 px-2 bg-dark-low dark:bg-dark dark:bg-opacity-50 border border-dark-low dark:border-dark rounded-sm text-gray-600"
             >
@@ -40,14 +33,11 @@ import formatDate from "../utils/date";
             </p>
           </div>
 
-          <p
-              v-if="post.date !== 'Invalid date'"
-              class="text-sm text-gray-400 mt-3 ml-2"
-          >
-            {{ formatDate(post.date) }}
+          <p v-if="props.post.date !== 'Invalid date'" class="text-sm text-gray-400 mt-3 ml-2">
+            {{ formatDate(props.post.date) }}
           </p>
         </div>
       </div>
-    </nuxt-link>
+    </NuxtLink>
   </div>
 </template>

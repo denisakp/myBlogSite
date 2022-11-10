@@ -55,11 +55,17 @@
 
 .toc,
 .toc-deep-2 {
+
 }
 
 .toc,
 .toc-deep-3 {
   @apply ml-4;
+}
+
+.toc,
+.toc-deep-plus {
+  @apply ml-6;
 }
 
 .nuxt-content {
