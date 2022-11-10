@@ -1,8 +1,9 @@
 <script setup>
 import {ref, onMounted} from "vue";
-import {useAsyncData, useRoute} from "nuxt/app";
+import {useAsyncData, useHead, useRoute} from "nuxt/app";
 const route = useRoute()
 import Paginate from '../../../components/shared/Paginate.vue';
+import generateMeta from "../../../utils/metatag";
 
 const articlesCount = (await queryContent('/').find()).length
 
@@ -25,6 +26,12 @@ const {data: articles, refresh} = await useAsyncData("articles", () => {
 onMounted(() => {
   refresh()
   window.scrollTo(0,0)
+})
+
+useHead({
+  title: "Mes articles",
+  description: "Parcourez l'ensemble des articles que j'ai écrit",
+  meta: generateMeta()
 })
 </script>
 

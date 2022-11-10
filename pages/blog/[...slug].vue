@@ -1,6 +1,7 @@
 <script setup>
-import {useAsyncData, useRoute} from "nuxt/app";
+import {useAsyncData, useHead, useRoute} from "nuxt/app";
 import PrevNext from "../../components/PrevNext";
+import generateMeta from "../../utils/metatag";
 
 const { path } = useRoute();
 const reviewedPath = path.replace("/blog", '')
@@ -13,6 +14,15 @@ const { data } = await useAsyncData(`content-${reviewedPath}`,  async () => {
 });
 
 const [prev, next] = data.value.surround
+
+useHead({
+  title: data.value.article.title,
+  description: data.value.article.description,
+  meta: generateMeta({
+    title: data.value.article.title,
+    description: data.value.article.description
+  }),
+})
 </script>
 
 <template>

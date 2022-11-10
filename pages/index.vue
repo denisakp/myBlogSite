@@ -1,7 +1,15 @@
 <script setup>
+import config from "../utils/config";
+import {useHead} from "nuxt/app";
+import generateMeta from "../utils/metatag";
 
 definePageMeta({
   key: (route) => route.fullpath
+})
+
+useHead({
+  title: "Accueil",
+  meta: generateMeta(),
 })
 
 const {data: navigation } = await useAsyncData("navigation", () => {
