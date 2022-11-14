@@ -1,22 +1,16 @@
 <script setup>
-import config from "../utils/config";
-import {useHead} from "nuxt/app";
-import generateMeta from "../utils/metatag";
+
+import {useAsyncData} from "nuxt/app";
 
 definePageMeta({
   key: (route) => route.fullpath
 })
 
-useHead({
-  title: "Accueil",
-  meta: generateMeta(),
-})
-
 const {data: navigation } = await useAsyncData("navigation", () => {
-  return fetchContentNavigation(queryContent('/'))
+  return fetchContentNavigation()
 });
 
-const query = { limit: 10, sort: { date: -1}, only: ['title', 'description', 'tags', '_path', 'date']}
+const query = { limit: 7, sort: { date: -1 }, only: ['title', 'description', 'tags', '_path', 'date']}
 
 </script>
 
@@ -47,7 +41,6 @@ const query = { limit: 10, sort: { date: -1}, only: ['title', 'description', 'ta
           </ContentList>
         </section>
       </div>
-
     </div>
   </div>
 </template>
