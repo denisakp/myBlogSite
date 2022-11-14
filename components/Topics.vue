@@ -1,11 +1,8 @@
 <script setup>
- let iconUrl = "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/googlecloud/googlecloud-original.svg"
+import { processImagePath } from "../utils/processing";
 
  const props =defineProps({
-  topics: {
-    type: Array,
-    default: () => []
-  }
+  topics: { type: Array, default: () => [] }
 })
 
 </script>
@@ -17,12 +14,12 @@
         v-for="(item, index) in props.topics"
         :key="index"
     >
-      <nuxt-link :to="`/topics${item._path}`">
+      <NuxtLink :to="`/topics${item._path}`">
         <div class="h-full flex items-center p-2 rounded-sm hover:shadow-sm slick-border dark-text">
           <div class="bg-dark-low p-3 mr-4 rounded-sm">
             <img class="mx-auto h-5 w-5 flex-shrink-0"
-                 :src="iconUrl"
-                 :alt="`${item.title} Logo`"
+                 :src="processImagePath(item.title)"
+                 :alt="`${item.title} - Logo`"
             />
           </div>
           <div class="flex-grow">
@@ -31,7 +28,7 @@
             </p>
           </div>
         </div>
-      </nuxt-link>
+      </NuxtLink>
     </div>
   </div>
 </template>

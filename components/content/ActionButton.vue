@@ -1,6 +1,5 @@
 <script setup>
-
-import {computed} from "vue";
+import { computed } from "vue";
 
 const props = defineProps({
   color: {
@@ -56,8 +55,8 @@ const buttonTheme = computed(() => {
         style="text-decoration: none !important"
     >
       <button
-          class="px-4 py-0 text-white rounded-sm flex items-center font-medium slick-button w-full sm:w-auto"
           :class="[buttonTheme]"
+          class="px-4 py-0 text-white rounded-sm flex items-center font-medium slick-button w-full sm:w-auto"
       >
         <div class="mr-1">
           <svg
@@ -127,7 +126,9 @@ const buttonTheme = computed(() => {
             </svg>
           </svg>
         </div>
+
         <p class="no-underline">{{ text }}</p>
+
       </button>
     </a>
   </div>
