@@ -1,6 +1,6 @@
 <script setup>
 import {ref, watch} from "vue"
-import SwitchTheme from '~/components/shared/SwitchTheme.vue';
+import SwitchTheme from './SwitchTheme.vue';
 
 const query = ref('')
 const posts = ref([])
@@ -13,21 +13,21 @@ watch(query, async(newValue) => {
     posts.value = []
     return
   }
+
   posts.value = await queryContent()
-      .where({_draft: false})
-      .where({title: {$containsAny: [newValue]}})
+      .where({ _draft: false })
+      .where({ title: { $containsAny: [newValue] } })
       .only(['_path', 'title', 'slug', 'description', 'date', 'tags'])
-      .sort({date: -1})
+      .sort({ date: -1 })
       .limit(10).find()
 })
-
 </script>
 
 <template>
   <nav class="fixed flex w-full bg-white dark:bg-dark-high items-center justify-between flex-wrap top-0 animated mx-auto py-2 md:py-3 h-auto border-b border-dark-low dark:border-dark z-10">
     <div class="container flex items-center justify-between text-dark dark:text-dark-low">
       <nuxt-link to="/">
-        <img src="https://loopbin.dev/_nuxt/img/main-logo.6b5fb2f.png" class="h-8 w-18 md:h-10 md:w-18" alt="loopbin logo"/>
+        <img src="https://loopbin.dev/_nuxt/img/main-logo.6b5fb2f.png" class="h-8 w-18 md:h-10 md:w-18" alt="denisakp logo"/>
       </nuxt-link>
 
       <div class="hidden md:flex flex-1 w-full mx-auto justify-center">
