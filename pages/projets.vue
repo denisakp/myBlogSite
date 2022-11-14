@@ -1,5 +1,12 @@
 <script setup>
-import projects from "~/data/project";
+import projects from "../data/project";
+import {useHead} from "nuxt/app";
+import generateMeta from "../utils/metatag";
+
+useHead({
+  title: "Projects",
+  meta: generateMeta(),
+})
 </script>
 
 <template>
@@ -50,9 +57,7 @@ import projects from "~/data/project";
                         />
                       </svg>
 
-                      <span class="ml-1 text-sm leading-5"
-                      >Github</span
-                      >
+                      <span class="ml-1 text-sm leading-5">Github</span>
                     </button>
                   </a>
                 </div>
