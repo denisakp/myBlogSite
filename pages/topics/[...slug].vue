@@ -1,63 +1,73 @@
 <script setup>
-import topics from "../../data/topics";
+import {ref} from "vue";
+import technos from "../../data/technos";
+
+
 const route = useRoute()
 
-const { data: inQuery } = await useAsyncData('in', () => {
-  return queryContent()
-      .only([
-        'slug',
-        'title',
-        'description',
-        'date',
-        'path',
-        'tags',
-        'topics',
-        'path',
-        'dir',
-      ])
-      .where(
-          { topics:
-                {
-                  $contains: route.params.slug
-                }
-          }
-      )
-      .sort({ date: -1})
-      .find()
+const slug = ref(route.params.slug[0])
+
+let techno
+
+technos.map((element) => {
+  return element.techs.find((item) => {
+    if(item.slug === slug.value) {
+      techno = item
+    }
+  })
 })
+
+const posts = await queryContent().where({ topics: { $contains: slug.value }}).only('path').find()
+
+const query = { where: { topics: { $contains: slug.value } }, limit: 10, sort: { date: -1 }, only: ['title', 'description', 'tags', '_path', 'date'] }
 
 </script>
 
 <template>
   <div class="page-bg">
-    <div class="container">
+    <div v-if="techno" class="container">
       <section class="text-dark mb-12">
         <div class="h-full flex items-center slick-border p-2 rounded-sm">
           <div class="bg-dark-low p-4 mr-4 rounded-sm">
             <img
                 class="mx-auto h-16 w-16 lg:w-24 flex-shrink-0"
-                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/composer/composer-original.svg"
+                :src="techno.image"
+                :alt="techno.name + ' logo'"
             />
           </div>
           <div class="flex-grow">
             <h4 class="darker-text">
-              Hello
+              {{ techno.name }}
             </h4>
             <p class="dark-text">
-              World
+              {{ techno.description }}
             </p>
           </div>
         </div>
       </section>
 
-      <h4 class="mb-4">Tutos ({{ inQuery.length }})</h4>
+      <h4 class="mb-4">Articles ({{ posts.length }})</h4>
 
       <section class="space-y-4">
-        <Post
-            v-for="(post, index) in inQuery"
-            :key="index"
-            :post="post"
-        />
+        <ContentList :query="query">
+
+          <template v-slot="{ list }">
+            <Post v-for="(post, index) in list" :key="index" :post="post" />
+          </template>
+
+          <template #not-found>
+            <p> Sorry no articles found</p>
+          </template>
+
+          <template #empty>
+            <p>No articles yet</p>
+          </template>
+        </ContentList>
+      </section>
+    </div>
+    <div v-else class="container">
+      <section class="space-y-4">
+        <p>Error 404</p>
       </section>
     </div>
   </div>
