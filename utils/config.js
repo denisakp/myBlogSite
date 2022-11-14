@@ -1,11 +1,6 @@
 const config = {
     baseUrl: "https://denisakp.me",
-    site: {
-        name: "Denis AKPAGNONITE",
-        description: "La description de mon site web",
-        lang: "fr",
-        title: "Denis AKPAGNONITE - Mon site web"
-    },
+    description: "Retrouvez gratuitement des articles et tutoriels portant sur les thématique du DevOPS, le cloud Infrastructure & l'ingénierie logicielle.",
 };
 
 export default config;

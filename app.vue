@@ -1,6 +1,30 @@
 <script setup>
 import Header from './components/shared/Header.vue';
 import BottomHeader from './components/shared/BottomHeader.vue';
+import {useHead, useRoute} from "nuxt/app";
+
+const route = useRoute()
+
+useHead({
+  titleTemplate: (titleChunk) => titleChunk ? `${titleChunk} - DenisAKP` : 'DenisAKP',
+  meta: [
+    { name: 'viewport', content: "width=device-width, initial-scale=1.0"},
+    { name: 'charset', content: 'UTF-8' },
+    { name: 'author', content: 'Denis AKPAGNONITE'},
+    { name: 'robots', content: 'index, follow'},
+    { name: 'format-detection', content: 'telephone=no'},
+    { name: 'og:type', content: 'website' },
+    { name: 'og:url', content: 'https://denisakp.me'+route.fullPath },
+    { name: 'twitter:card', content: 'summary' },
+    { name: 'twitter:url', content: 'https://denisakp.me'+route.fullPath },
+  ],
+  link: [
+    { rel: "canonical", href: "https://denisakp.me" },
+    { rel: "apple-touch-icon", type: "image/png",sizes:"180x180",   href: "/favicon/apple-touch-icon.png" },
+    { rel: "icon", type: "image/png",sizes:"32x32",   href: "/favicon/favicon-32x32.png" },
+    { rel: "icon", type: "image/png",sizes:"16x16",   href: "/favicon/favicon-16x16.png" },
+  ]
+})
 </script>
 
 <template>

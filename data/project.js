@@ -20,13 +20,7 @@ const projects = [
                 "nodejs",
                 "nestjs",
                 "terraform",
-                "vuejs",
-                "google-cloud-platform",
-                "text-sentiment-analysis",
-                "compute-vision",
-                "full-text=search",
-                "caching",
-                "docker"
+                "vuejs"
             ],
             "github": "https://github.com/CorneilleEdi/tiptap",
             "preview": "https://docs.google.com/presentation/d/1X27-9_CD9AgdlKWmV7hwE1-oVAcbVnWD-kXUYj3ciTo/edit?usp=sharing"

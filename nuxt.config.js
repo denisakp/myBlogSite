@@ -1,6 +1,7 @@
 import config from "./utils/config";
 
 export default defineNuxtConfig({
+    target: "static",
     modules: [
         '@nuxtjs/tailwindcss',
         '@nuxt/content',
@@ -10,8 +11,13 @@ export default defineNuxtConfig({
     content: {
         highlight: {
             theme: {
-                default: 'material-palenight',
-                dark: 'github-dark'
+                default: 'monokai',
+                dark: 'min-dark'
+            }
+        },
+        markdown: {
+            prism: {
+                theme: false
             }
         }
     },
