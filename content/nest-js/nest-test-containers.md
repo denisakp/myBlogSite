@@ -13,9 +13,13 @@ Dans ce tuto d’introduction, nous verrons comment mettre en place un environne
 
 L’application qui sera utilisée est un simple API CRUD qui utilise MongoDB comme base de données.
 
-
-<action-button type="github" text="Code sur Github" link="https://github.com/CorneilleEdi/mongodb-redis-cache"></action-button>
-
+::action-button
+---
+type: github
+text: Code sur Github
+link: https://github.com/CorneilleEdi/mongodb-redis-cache
+---
+::
 
 ## la logic
 
@@ -161,6 +165,12 @@ afterAll(async () => {
 - TestContainers est disponible dans plusieurs langages (java,go, python, rust, scala) et marche avec plusieurs framework
 
 
-<action-button type="github" text="Code sur Github" link="https://github.com/CorneilleEdi/mongodb-redis-cache"></action-button>
+::action-button
+---
+type: github
+text: Code sur Github
+link: https://github.com/CorneilleEdi/mongodb-redis-cache
+---
+::
 
 
