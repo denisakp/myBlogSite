@@ -1,6 +1,6 @@
 <script setup>
-import Header from '~/components/shared/Header.vue';
-import BottomHeader from '~/components/shared/BottomHeader.vue';
+import Header from './components/shared/Header.vue';
+import BottomHeader from './components/shared/BottomHeader.vue';
 </script>
 
 <template>
