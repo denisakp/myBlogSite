@@ -19,7 +19,6 @@
   },
   "dependencies": {
     "@nuxtjs/robots": "^2.5.0",
-    "firebase": "^9.14.0",
-    "prism-themes": "^1.9.0"
+    "firebase": "^9.14.0"
   }
 }

@@ -1,7 +1,5 @@
 <script setup>
 
-import {useAsyncData} from "nuxt/app";
-
 const {data: navigation } = await useAsyncData("navigation", () => {
   return fetchContentNavigation()
 });

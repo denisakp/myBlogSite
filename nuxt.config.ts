@@ -15,11 +15,6 @@ export default defineNuxtConfig({
                 dark: 'min-dark'
             }
         },
-        markdown: {
-            prism: {
-                theme: false
-            }
-        }
     },
     colorMode: {
         classSuffix: ''

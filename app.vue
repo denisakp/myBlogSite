@@ -1,13 +1,11 @@
 <script setup>
 import Header from './components/shared/Header.vue';
 import BottomHeader from './components/shared/BottomHeader.vue';
-import {useHead, useRoute} from "nuxt/app";
 
 const route = useRoute()
 
 useHead({
-  titleTemplate: (titleChunk) => titleChunk ? `${titleChunk} - DenisAKP` : 'DenisAKP',
-  title:"DenisAKP — Tutos en DevOPS, Cloud Infrastructure & Ingénierie logicielle",
+  titleTemplate: (titleChunk) => titleChunk ? `${titleChunk} - DenisAKP` : 'DenisAKP — Tutos en DevOPS, Cloud Infrastructure & Ingénierie logicielle',
   meta: [
     { name: 'viewport', content: "width=device-width, initial-scale=1.0"},
     { name: 'charset', content: 'UTF-8' },
