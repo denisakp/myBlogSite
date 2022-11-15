@@ -9,7 +9,7 @@ const colorMode = useColorMode()
         <span
             class="flex md:space-x-2 items-center md:px-2"
         >
-            <p class="text-sm font-medium hidden md:block">auto</p>
+            <p class="text-sm font-medium hidden md:block">System</p>
             <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 24 24"
@@ -31,7 +31,7 @@ const colorMode = useColorMode()
           <span
               class="flex md:space-x-2 items-center md:px-2"
           >
-        <p class="text-sm font-medium hidden md:block">light</p>
+        <p class="text-sm font-medium hidden md:block">Light</p>
 
         <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -54,7 +54,7 @@ const colorMode = useColorMode()
           <span
               class="flex md:space-x-2 items-center md:px-2"
           >
-        <p class="text-sm font-medium hidden md:block">dark</p>
+        <p class="text-sm font-medium hidden md:block">Dark</p>
         <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 24 24"

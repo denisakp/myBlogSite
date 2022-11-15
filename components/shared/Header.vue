@@ -27,7 +27,7 @@ watch(query, async(newValue) => {
   <nav class="fixed flex w-full bg-white dark:bg-dark-high items-center justify-between flex-wrap top-0 animated mx-auto py-2 md:py-3 h-auto border-b border-dark-low dark:border-dark z-10">
     <div class="container flex items-center justify-between text-dark dark:text-dark-low">
       <nuxt-link to="/">
-        <img src="https://loopbin.dev/_nuxt/img/main-logo.6b5fb2f.png" class="h-8 w-18 md:h-10 md:w-18" alt="denisakp logo"/>
+        <img src="~/assets/images/logo/main/main-_logo.png" class="h-8 w-18 md:h-10 md:w-18" alt="denisakp logo"/>
       </nuxt-link>
 
       <div class="hidden md:flex flex-1 w-full mx-auto justify-center">
@@ -77,6 +77,8 @@ watch(query, async(newValue) => {
             </nuxt-link>
           </li>
           <li>
+            <!--
+
             <nuxt-link
                 to="/about"
                 active-class="exact-navigation"
@@ -96,7 +98,7 @@ watch(query, async(newValue) => {
               </svg>
             </span>
               <p class="text-sm">A Propos</p>
-            </nuxt-link>
+            </nuxt-link> -->
           </li>
         </ul>
       </div>

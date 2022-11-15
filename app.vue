@@ -7,6 +7,7 @@ const route = useRoute()
 
 useHead({
   titleTemplate: (titleChunk) => titleChunk ? `${titleChunk} - DenisAKP` : 'DenisAKP',
+  title:"DenisAKP — Tutos en DevOPS, Cloud Infrastructure & Ingénierie logicielle",
   meta: [
     { name: 'viewport', content: "width=device-width, initial-scale=1.0"},
     { name: 'charset', content: 'UTF-8' },
@@ -21,8 +22,11 @@ useHead({
   link: [
     { rel: "canonical", href: "https://denisakp.me" },
     { rel: "apple-touch-icon", type: "image/png",sizes:"180x180",   href: "/favicon/apple-touch-icon.png" },
-    { rel: "icon", type: "image/png",sizes:"32x32",   href: "/favicon/favicon-32x32.png" },
-    { rel: "icon", type: "image/png",sizes:"16x16",   href: "/favicon/favicon-16x16.png" },
+    {rel: 'icon', type: 'image/x-icon', href: '/favicon/favicon.ico'},
+    { rel: "icon", type: "image/png", sizes:"32x32",   href: "/favicon/favicon-32x32.png" },
+    { rel: "icon", type: "image/png", sizes:"16x16",   href: "/favicon/favicon-16x16.png" },
+    { color:"#5bbad5", rel: "mask-icon",  href: "/favicon/safari-pinned-tab.svg" },
+    { rel: "manifest", href: "/favicon/site.webmanifest" },
   ]
 })
 </script>
