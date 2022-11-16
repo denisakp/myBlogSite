@@ -1,6 +1,5 @@
 import { initializeApp } from "firebase/app";
 import { getAnalytics } from "firebase/analytics";
-import {useState} from "#app";
 
 const firebaseConfig = {
     apiKey: "AIzaSyB8F9UWoeDjWsAhVNpwGAi4KXr8Q84uqqA",
@@ -12,13 +11,7 @@ const firebaseConfig = {
     measurementId: "G-G4YK1FGCB5"
 };
 
-// Initialize Firebase
 const app = initializeApp(firebaseConfig);
 const analytics = getAnalytics(app);
 
-
-
-export default defineNuxtPlugin(nuxtApp => {
-    useState('firebaseApp', () => app)
-    useState('analytics', () => analytics)
-})
+export default analytics

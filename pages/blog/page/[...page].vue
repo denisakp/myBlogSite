@@ -1,6 +1,4 @@
 <script setup>
-import {ref, onMounted} from "vue";
-import {useAsyncData, useRoute} from "nuxt/app";
 import Paginate from '../../../components/shared/Paginate.vue';
 
 const route = useRoute()

@@ -1,5 +1,4 @@
 <script setup>
-import {ref, watch} from "vue"
 import SwitchTheme from './SwitchTheme.vue';
 
 const query = ref('')

@@ -1,13 +1,11 @@
 <script setup>
 import Header from './components/shared/Header.vue';
 import BottomHeader from './components/shared/BottomHeader.vue';
-import {useHead, useRoute} from "nuxt/app";
 
 const route = useRoute()
 
 useHead({
-  titleTemplate: (titleChunk) => titleChunk ? `${titleChunk} - DenisAKP` : 'DenisAKP',
-  title:"DenisAKP — Tutos en DevOPS, Cloud Infrastructure & Ingénierie logicielle",
+  titleTemplate: (titleChunk) => titleChunk ? `${titleChunk} - DenisAKP` : 'DenisAKP — Tutos en DevOPS, Cloud Infrastructure & Ingénierie logicielle',
   meta: [
     { name: 'viewport', content: "width=device-width, initial-scale=1.0"},
     { name: 'charset', content: 'UTF-8' },
@@ -27,21 +25,6 @@ useHead({
     { rel: "icon", type: "image/png", sizes:"16x16",   href: "/favicon/favicon-16x16.png" },
     { color:"#5bbad5", rel: "mask-icon",  href: "/favicon/safari-pinned-tab.svg" },
     { rel: "manifest", href: "/favicon/site.webmanifest" },
-  ],
-  script: [
-    {
-      async: true,
-      src: "https://www.googletagmanager.com/gtag/js?id=G-110JN254M7"
-    },
-    {
-      children: `window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', 'G-110JN254M7');`
-    }
-  ],
-  noscript: [
-    {
-      body: true,
-      children: ``
-    }
   ]
 })
 </script>
