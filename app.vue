@@ -25,21 +25,6 @@ useHead({
     { rel: "icon", type: "image/png", sizes:"16x16",   href: "/favicon/favicon-16x16.png" },
     { color:"#5bbad5", rel: "mask-icon",  href: "/favicon/safari-pinned-tab.svg" },
     { rel: "manifest", href: "/favicon/site.webmanifest" },
-  ],
-  script: [
-    {
-      async: true,
-      src: "https://www.googletagmanager.com/gtag/js?id=G-110JN254M7"
-    },
-    {
-      children: `window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', 'G-110JN254M7');`
-    }
-  ],
-  noscript: [
-    {
-      body: true,
-      children: ``
-    }
   ]
 })
 </script>
