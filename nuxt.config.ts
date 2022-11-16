@@ -2,7 +2,6 @@ import config from "./utils/config";
 
 export default defineNuxtConfig({
     target: "static",
-    ssr: false,
     modules: [
         '@nuxtjs/tailwindcss',
         '@nuxt/content',
@@ -33,7 +32,6 @@ export default defineNuxtConfig({
     nitro: {
         prerender: {
             routes: ['/sitemap.xml']
-        },
-        preset: "service-worker"
+        }
     }
 })
