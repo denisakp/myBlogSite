@@ -25,30 +25,6 @@ useHead({
     { rel: "icon", type: "image/png", sizes:"16x16",   href: "/favicon/favicon-16x16.png" },
     { color:"#5bbad5", rel: "mask-icon",  href: "/favicon/safari-pinned-tab.svg" },
     { rel: "manifest", href: "/favicon/site.webmanifest" },
-  ],
-  script: [
-
-    {
-      src: 'https://giscus.app/client.js',
-      body: true,
-      defer: true,
-      async: true,
-      children: `
-            data-repo="denisakp/myBlogSite"
-            data-repo-id="R_kgDOIaV8gQ"
-            data-category="[ENTER CATEGORY NAME HERE]"
-            data-category-id="[ENTER CATEGORY ID HERE]"
-            data-mapping="pathname"
-            data-strict="0"
-            data-reactions-enabled="1"
-            data-emit-metadata="0"
-            data-input-position="bottom"
-            data-theme="preferred_color_scheme"
-            data-lang="fr"
-            data-loading="lazy"
-            crossorigin="anonymous"
-          `
-    }
   ]
 })
 </script>
