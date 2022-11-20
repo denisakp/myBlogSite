@@ -13,12 +13,19 @@ watch(query, async(newValue) => {
     return
   }
 
-  posts.value = await queryContent()
+  const articles = await queryContent()
       .where({ _draft: false })
-      .where({ title: { $containsAny: [newValue] } })
       .only(['_path', 'title', 'slug', 'description', 'date', 'tags'])
       .sort({ date: -1 })
-      .limit(10).find()
+      .limit(25)
+      .find()
+
+  for (const article of articles) {
+    if (article.title.toLowerCase().includes(newValue.toLowerCase())) {
+      posts.value.push(article)
+    }
+  }
+
 })
 </script>
 
