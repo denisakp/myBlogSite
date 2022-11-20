@@ -14,7 +14,7 @@ import formatDate from "../utils/date";
 <template>
   <div class="h-full border-dark-low dark:border-white dark:border-opacity-20 border rounded-sm hover:shadow-sm">
     <NuxtLink :to="`/blog${props.post._path}`" class="w-full" style="text-decoration: none">
-      <div class="p-4  flex flex-col h-full">
+      <div class="p-4 flex flex-col h-full">
         <p class="text-dark-high dark:text-white font-medium">
           {{ props.post.title }}
         </p>

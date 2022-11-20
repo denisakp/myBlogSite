@@ -1,3 +1,5 @@
+@import url('https://api.fontshare.com/v2/css?f[]=cabinet-grotesk@1,800,500,100,700,400,300,200,900&f[]=satoshi@1,900,700,500,301,701,300,501,401,901,400,2&display=swap');
+
 .container {
   @apply max-w-5xl 2xl:max-w-9xl px-4 sm:px-10 mx-auto;
 }
@@ -31,7 +33,7 @@
 }
 
 .slick-border {
-  @apply border-dark-low dark:border-white dark:border-opacity-20 border;
+  @apply border-current dark:border-white dark:border-opacity-20 border;
 }
 
 .darker-text {
