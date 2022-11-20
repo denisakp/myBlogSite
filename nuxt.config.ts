@@ -2,7 +2,8 @@ export default defineNuxtConfig({
     modules: [
         '@nuxtjs/tailwindcss',
         '@nuxt/content',
-        '@nuxtjs/color-mode'
+        '@nuxtjs/color-mode',
+        '@nuxt/image-edge'
     ],
     content: {
         highlight: {
@@ -24,7 +25,9 @@ export default defineNuxtConfig({
         prerender: {
             routes: ['/sitemap.xml']
         },
-        preset: 'node-server'
+        preset: 'node-server',
+        compressPublicAssets: true,
+
     },
     ssr: true
 })

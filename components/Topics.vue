@@ -17,10 +17,7 @@ import { processImagePath } from "../utils/processing";
       <NuxtLink :to="`/topics${item._path}`">
         <div class="h-full flex items-center p-2 rounded-sm hover:shadow-sm slick-border dark-text">
           <div class="bg-white mr-4 rounded-sm">
-            <img class="mx-auto h-5 w-5 flex-shrink-0"
-                 :src="processImagePath(item.title)"
-                 :alt="`${item.title} - Logo`"
-            />
+            <nuxt-img class="mx-auto h-5 w-5 flex-shrink-0" :src="processImagePath(item.title)" :alt="`${item.title} - Logo`"/>
           </div>
           <div class="flex-grow">
             <p class="font-medium">

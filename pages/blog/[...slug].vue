@@ -49,7 +49,7 @@ onMounted(() => {
       <div class="container">
         <div class="w-full">
           <div class="img-cont h-72 mb-12">
-            <img :src="`/${article.img}`" :alt="article.title" class=" rounded-2xl" />
+            <nuxt-img :src="'/'+article.img" :alt="article.title" class=" rounded-2xl" />
           </div>
           <h3 class="my-2 dark-text">{{ article.title }}</h3>
           <p class="mt-2 mb-4 md:mb-8 dark-text">{{ article.description }}</p>
