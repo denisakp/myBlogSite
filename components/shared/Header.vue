@@ -50,7 +50,7 @@ watch(query, async(newValue) => {
                 />
               </svg>
             </span>
-              <p class="text-sm">Articles</p>
+              <p class="text-sm">Blog</p>
             </nuxt-link>
           </li>
           <li>
