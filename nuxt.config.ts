@@ -25,5 +25,6 @@ export default defineNuxtConfig({
             routes: ['/sitemap.xml']
         },
         preset: 'node-server'
-    }
+    },
+    ssr: true
 })
