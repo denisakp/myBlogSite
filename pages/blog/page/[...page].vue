@@ -1,5 +1,6 @@
 <script setup>
 import Paginate from '../../../components/shared/Paginate.vue';
+import config from "../../../utils/config";
 
 const route = useRoute()
 
@@ -31,15 +32,15 @@ onMounted(() => {
 <template>
   <div>
     <Head>
-      <Title>Articles</Title>
-      <Meta name="title" content="Articles" />
+      <Title>Articles — DenisAKP</Title>
+      <Meta name="title" content="Articles — DenisAKP" />
       <Meta name="description" content="Retrouvez la liste des articles que j'ai écrit ou co-écrit" />
       <Meta name="keywords" content="denisakp,articles" />
       <Meta name="og:description" content="Retrouvez la liste des articles que j'ai écrit ou co-écrit" />
-      <Meta name="og:title" content="Articles" />
-      <Meta name="og:image" content="https://metatags.io/assets/meta-tags-16a33a6a8531e519cc0936fbba0ad904e52d35f34a46c97a2c9f6f7dd7d336f2.png" />
-      <Meta name="twitter:image" content="https://metatags.io/assets/meta-tags-16a33a6a8531e519cc0936fbba0ad904e52d35f34a46c97a2c9f6f7dd7d336f2.png" />
-      <Meta name="twitter:tile" content="Articles" />
+      <Meta name="og:title" content="Articles — DenisAKP" />
+      <Meta name="og:image" :content="config.baseUrl +'/images/meta_image.png'" />
+      <Meta name="twitter:image" :content="config.baseUrl +'/images/meta_image.png'" />
+      <Meta name="twitter:tile" content="Articles — DenisAKP" />
       <Meta name="twitter:description" content="Retrouvez la liste des articles que j'ai écrit ou co-écrit" />
     </Head>
 

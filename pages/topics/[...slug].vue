@@ -24,15 +24,15 @@ const query = { where: { topics: { $contains: slug.value } }, limit: 10, sort: {
 <template>
   <div>
     <Head>
-      <Title>{{ techno.name }}</Title>
-      <Meta name="title" :content="techno.name" />
+      <Title>{{ techno.name }} — DenisAKP</Title>
+      <Meta name="title" :content="techno.name +' — DenisAKP'" />
       <Meta name="description" :content="techno.description" />
       <Meta name="keywords" :content="'denisakp,' + slug" />
       <Meta name="og:description" :content="techno.description" />
-      <Meta name="og:title" :content="techno.name" />
-      <Meta name="og:image" content="https://metatags.io/assets/meta-tags-16a33a6a8531e519cc0936fbba0ad904e52d35f34a46c97a2c9f6f7dd7d336f2.png" />
-      <Meta name="twitter:image" content="https://metatags.io/assets/meta-tags-16a33a6a8531e519cc0936fbba0ad904e52d35f34a46c97a2c9f6f7dd7d336f2.png" />
-      <Meta name="twitter:tile" :content="techno.name" />
+      <Meta name="og:title" :content="techno.name +' — DenisAKP'" />
+      <Meta name="og:image" :content="techno.image" />
+      <Meta name="twitter:image" :content="techno.image" />
+      <Meta name="twitter:tile" :content="techno.name +' — DenisAKP'" />
       <Meta name="twitter:description" :content="techno.description" />
     </Head>
 

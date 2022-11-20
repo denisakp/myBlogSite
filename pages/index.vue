@@ -1,4 +1,5 @@
 <script setup>
+import config from "../utils/config";
 
 const {data: navigation } = await useAsyncData("navigation", () => {
   return fetchContentNavigation()
@@ -11,13 +12,14 @@ const query = { limit: 7, sort: { date: -1 }, only: ['title', 'description', 'ta
 <template>
   <div>
     <Head>
+      <Title>DenisAKP — Tutos en DevOPS, Cloud Infrastructure & Ingénierie logicielle</Title>
       <Meta name="title" content="DenisAKP — Tutos en DevOPS, Cloud Infrastructure & Ingénierie logicielle" />
-      <Meta name="description" content="Retrouvez gratuitement des articles et tutoriels portant sur les thématique du DevOPS, le cloud Infrastructure & l'ingénierie logicielle." />
-      <Meta name="keywords" content="denisakp, devops, ingénierie logicielle, tutos" />
-      <Meta name="og:description" content="Retrouvez gratuitement des articles et tutoriels portant sur les thématique du DevOPS, le cloud Infrastructure & l'ingénierie logicielle." />
+      <Meta name="description" content="Je partage gratuitement des articles et tutoriels portant sur les thématique du DevOPS, le cloud Infrastructure & l'ingénierie logicielle." />
+      <Meta name="keywords" content="denisakp, devops, kubernetes, ingénierie logicielle, tutos" />
+      <Meta name="og:description" content="Je partage gratuitement des articles et tutoriels portant sur les thématique du DevOPS, le cloud Infrastructure & l'ingénierie logicielle." />
       <Meta name="og:title" content="DenisAKP — Tutos en DevOPS, Cloud Infrastructure & Ingénierie logicielle" />
-      <Meta name="og:image" content="https://metatags.io/assets/meta-tags-16a33a6a8531e519cc0936fbba0ad904e52d35f34a46c97a2c9f6f7dd7d336f2.png" />
-      <Meta name="twitter:image" content="https://metatags.io/assets/meta-tags-16a33a6a8531e519cc0936fbba0ad904e52d35f34a46c97a2c9f6f7dd7d336f2.png" />
+      <Meta name="og:image" :content="config.baseUrl +'/images/meta_image.png'" />
+      <Meta name="twitter:image" :content="config.baseUrl +'/images/meta_image.png'" />
       <Meta name="twitter:tile" content="DenisAKP — Tutos en DevOPS, Cloud Infrastructure & Ingénierie logicielle" />
       <Meta name="twitter:description" content="Retrouvez gratuitement des articles et tutoriels portant sur les thématique du DevOPS, le cloud Infrastructure & l'ingénierie logicielle." />
     </Head>
@@ -51,3 +53,9 @@ const query = { limit: 7, sort: { date: -1 }, only: ['title', 'description', 'ta
     </div>
   </div>
 </template>
+
+<style scoped>
+.img-cont img {
+  @apply h-full w-full object-cover;
+}
+</style>

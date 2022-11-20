@@ -1,20 +1,21 @@
 <script setup>
 import projects from "../data/project";
+import config from "../utils/config";
 
 </script>
 
 <template>
   <div>
     <Head>
-      <Title>Projets</Title>
-      <Meta name="title" content="Projets" />
+      <Title>Projets — DenisAKP</Title>
+      <Meta name="title" content="Projets — DenisAKP" />
       <Meta name="description" content="Retrouvez tous les projets ouverts sur lesquels j'ai travaillé ou collaboré." />
-      <Meta name="keywords" content="denisakp, devops, ingénierie logicielle, tutos" />
+      <Meta name="keywords" content="denisakp, github, projects, projets" />
       <Meta name="og:description" content="Retrouvez tous les projets ouverts sur lesquels j'ai travaillé ou collaboré." />
-      <Meta name="og:title" content="Projets" />
-      <Meta name="og:image" content="https://metatags.io/assets/meta-tags-16a33a6a8531e519cc0936fbba0ad904e52d35f34a46c97a2c9f6f7dd7d336f2.png" />
-      <Meta name="twitter:image" content="https://metatags.io/assets/meta-tags-16a33a6a8531e519cc0936fbba0ad904e52d35f34a46c97a2c9f6f7dd7d336f2.png" />
-      <Meta name="twitter:tile" content="Projets" />
+      <Meta name="og:title" content="Projets — DenisAKP" />
+      <Meta name="og:image" :content="config.baseUrl +'/images/meta_image.png'" />
+      <Meta name="twitter:image" :content="config.baseUrl +'/images/meta_image.png'" />
+      <Meta name="twitter:tile" content="Projets — DenisAKP" />
       <Meta name="twitter:description" content="Retrouvez tous les projets ouverts sur lesquels j'ai travaillé ou collaboré." />
     </Head>
     <div class="page-bg">

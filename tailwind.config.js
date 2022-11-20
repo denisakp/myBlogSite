@@ -60,8 +60,8 @@ module.exports = {
     },
 
     fontFamily: {
-      sans: ["'Poppins'", ...defaultTheme.fontFamily.sans],
-      mono: [...defaultTheme.fontFamily.mono],
+      sans: ['Satoshi', ...defaultTheme.fontFamily.sans],
+      mono: ['Cabinet Grotesk', ...defaultTheme.fontFamily.sans],
     },
   },
   plugins: [
