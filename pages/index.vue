@@ -6,7 +6,6 @@ const {data: navigation } = await useAsyncData("navigation", () => {
 });
 
 const query = { limit: 7, sort: { date: -1 }, only: ['title', 'description', 'tags', '_path', 'date']}
-
 </script>
 
 <template>

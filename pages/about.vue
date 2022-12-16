@@ -1,7 +1,6 @@
 <script setup>
 import ContactComponent from "~/components/about/ContactComponent.vue";
 import technos from "../data/technos";
-
 </script>
 
 <template>

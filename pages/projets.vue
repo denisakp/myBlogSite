@@ -1,21 +1,20 @@
 <script setup>
 import projects from "../data/project";
 import config from "../utils/config";
-
 </script>
 
 <template>
   <div>
     <Head>
-      <Title>Projets — DenisAKP</Title>
-      <Meta name="title" content="Projets — DenisAKP" />
+      <Title>DenisAKP — Projets</Title>
+      <Meta name="title" content="DenisAKP — Projets" />
       <Meta name="description" content="Retrouvez tous les projets ouverts sur lesquels j'ai travaillé ou collaboré." />
       <Meta name="keywords" content="denisakp, github, projects, projets" />
       <Meta name="og:description" content="Retrouvez tous les projets ouverts sur lesquels j'ai travaillé ou collaboré." />
-      <Meta name="og:title" content="Projets — DenisAKP" />
+      <Meta name="og:title" content="DenisAKP — Projets" />
       <Meta name="og:image" :content="config.baseUrl +'/images/meta_image.png'" />
       <Meta name="twitter:image" :content="config.baseUrl +'/images/meta_image.png'" />
-      <Meta name="twitter:tile" content="Projets — DenisAKP" />
+      <Meta name="twitter:tile" content="DenisAKP — Projets" />
       <Meta name="twitter:description" content="Retrouvez tous les projets ouverts sur lesquels j'ai travaillé ou collaboré." />
     </Head>
     <div class="page-bg">
@@ -85,9 +84,7 @@ import config from "../utils/config";
                             d="M10 6v2H5v11h11v-5h2v6a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h6zm11-3v8h-2V6.413l-7.793 7.794-1.414-1.414L17.585 5H13V3h8z"
                         />
                       </svg>
-                      <span class="ml-1 text-sm leading-5"
-                      >Preview</span
-                      >
+                      <span class="ml-1 text-sm leading-5">Preview</span>
                     </button>
                   </a>
                 </div>
