@@ -91,7 +91,7 @@ const technos = [
                 "description": "Outil de tests sous PHP."
             },
             {
-                "name": "PostMAN",
+                "name": "Postman",
                 "slug": "postman",
                 "image": "/images/techs/postman.png",
                 "description": "Outil de tests d'API."
@@ -207,10 +207,10 @@ const technos = [
                 "description": "Outil de surveillance et générateur d'alertes."
             },
             {
-                "name": "Elasticsearch (ELK)",
+                "name": "Suite ELK",
                 "slug": "elasticsearch",
                 "image": "/images/techs/elk.svg",
-                "description": "Outil d'agrégation et analyse de logs"
+                "description": "ElasticSearch, Logstash, Kibana"
             }
         ]
     },
@@ -244,13 +244,13 @@ const technos = [
         ]
     },
     {
-        "title": "Envi",
+        "title": "Environnement de travail | IDE",
         "techs": [
             {
                 "name": "Jetbrains",
                 "slug": "jetbrains",
                 "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jetbrains/jetbrains-original.svg",
-                "description": "IDE et outils de developpement"
+                "description": "IDE par référence"
             }
         ]
     }

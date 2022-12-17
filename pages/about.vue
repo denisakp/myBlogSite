@@ -7,14 +7,14 @@ import technos from "../data/technos";
   <div>
     <Head>
       <Title>DenisAKP — A propos de moi</Title>
-      <Meta name="title" content="DenisAKP — Tutos en DevOPS, Cloud Infrastructure & Ingénierie logicielle" />
+      <Meta name="title" content="DenisAKP — A propos de moi" />
       <Meta name="description" content="Je partage gratuitement des articles et tutoriels portant sur les thématique du DevOPS, le cloud Infrastructure & l'ingénierie logicielle." />
       <Meta name="keywords" content="denisakp, devops, kubernetes, ingénierie logicielle, tutos" />
       <Meta name="og:description" content="Je partage gratuitement des articles et tutoriels portant sur les thématique du DevOPS, le cloud Infrastructure & l'ingénierie logicielle." />
-      <Meta name="og:title" content="DenisAKP — A propos" />
+      <Meta name="og:title" content="DenisAKP — A propos de moi" />
       <Meta name="og:image" :content="config.baseUrl +'/images/meta_image.png'" />
       <Meta name="twitter:image" :content="config.baseUrl +'/images/meta_image.png'"/>
-      <Meta name="twitter:tile" content="DenisAKP — A propos" />
+      <Meta name="twitter:tile" content="DenisAKP — A propos de moi" />
       <Meta name="twitter:description" content="Retrouvez gratuitement des articles et tutoriels portant sur les thématique du DevOPS, le cloud Infrastructure & l'ingénierie logicielle." />
     </Head>
 
@@ -26,7 +26,7 @@ import technos from "../data/technos";
             <h3 class="text-center">Hello 👋 World</h3>
             <br><br>
 
-            <img class="object-fill h-96 w-full" src="/images/about.webp" alt="profile"/>
+            <!-- <img class="object-fill h-96 w-full" src="" alt="profile"/> -->
 
             <p class="mt-8">
               Je m'appelle <span class="hightlighted">Denis AKPAGNONITE</span> (denisakp), actuellement en deuxième année du cycle ingénieur, spécialité Sciences de Données &

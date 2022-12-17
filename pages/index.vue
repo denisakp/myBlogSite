@@ -25,7 +25,7 @@ const query = { limit: 7, sort: { date: -1 }, only: ['title', 'description', 'ta
     <div class="page-bg">
       <div class="container">
         <div>
-          <h3>Sujets disponibles</h3>
+          <h3>`Sujets Disponibles</h3>
           <Topics :topics="navigation" />
         </div>
 
@@ -39,7 +39,8 @@ const query = { limit: 7, sort: { date: -1 }, only: ['title', 'description', 'ta
               </template>
 
               <template #not-found>
-                <p> No articles found</p>
+                <br><br><br><br>
+                  <p class="text-4xl text-center">No articles found 🫣 </p>
               </template>
 
               <template #empty>
@@ -55,6 +56,6 @@ const query = { limit: 7, sort: { date: -1 }, only: ['title', 'description', 'ta
 
 <style scoped>
 .img-cont img {
-  @apply h-full w-full object-cover;
+  @apply h-full w-48 object-cover;
 }
 </style>

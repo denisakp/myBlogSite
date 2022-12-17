@@ -26,21 +26,20 @@ onMounted(() => {
   refresh()
   window.scrollTo(0,0)
 })
-
 </script>
 
 <template>
   <div>
     <Head>
-      <Title>Articles — DenisAKP</Title>
-      <Meta name="title" content="Articles — DenisAKP" />
+      <Title>DenisAKP — Articles</Title>
+      <Meta name="title" content="DenisAKP — Articles" />
       <Meta name="description" content="Retrouvez la liste des articles que j'ai écrit ou co-écrit" />
       <Meta name="keywords" content="denisakp,articles" />
       <Meta name="og:description" content="Retrouvez la liste des articles que j'ai écrit ou co-écrit" />
-      <Meta name="og:title" content="Articles — DenisAKP" />
+      <Meta name="og:title" content="DenisAKP — Articles" />
       <Meta name="og:image" :content="config.baseUrl +'/images/meta_image.png'" />
       <Meta name="twitter:image" :content="config.baseUrl +'/images/meta_image.png'" />
-      <Meta name="twitter:tile" content="Articles — DenisAKP" />
+      <Meta name="twitter:tile" content="DenisAKP — Articles" />
       <Meta name="twitter:description" content="Retrouvez la liste des articles que j'ai écrit ou co-écrit" />
     </Head>
 

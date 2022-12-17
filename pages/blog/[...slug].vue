@@ -28,21 +28,20 @@ onMounted(() => {
   giscus.setAttribute('crossorigin', 'anonymous')
   document.body.appendChild(giscus)
 })
-
 </script>
 
 <template>
   <div>
     <Head>
-      <Title>{{ article.title }} — DenisAKP</Title>
+      <Title>DenisAKP — {{ article.title }}</Title>
       <Meta name="title" :content="article.title" />
       <Meta name="description" :content="article.description" />
       <Meta name="keywords" :content="article.tags.toString()" />
       <Meta name="og:description" :content="article.description" />
-      <Meta name="og:title" :content="article.title +' — DenisAKP'" />
+      <Meta name="og:title" :content="'DenisAKP — ' +article.title" />
       <Meta name="og:image" :content="config.baseUrl+'/'+article.img" />
       <Meta name="twitter:image" :content="config.baseUrl+'/'+article.img" />
-      <Meta name="twitter:tile" :content="article.title +' — DenisAKP'" />
+      <Meta name="twitter:tile" :content="'DenisAKP — '+article.title" />
       <Meta name="twitter:description" :content="article.description" />
     </Head>
     <div class="page-bg">
