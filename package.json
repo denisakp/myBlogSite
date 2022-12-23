@@ -3,7 +3,6 @@
   "scripts": {
     "build": "nuxt build",
     "dev": "nuxt dev",
-    "start": "node .output/server/index.mjs",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare"
@@ -18,5 +17,8 @@
     "sass": "^1.54.9",
     "sass-loader": "^13.2.0",
     "sitemap": "^7.1.1"
+  },
+  "dependencies": {
+    "@nuxtjs/google-fonts": "^2.0.0"
   }
 }

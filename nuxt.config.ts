@@ -25,9 +25,6 @@ export default defineNuxtConfig({
         prerender: {
             routes: ['/sitemap.xml']
         },
-        preset: 'node-server',
-        compressPublicAssets: true,
-
-    },
-    ssr: true
+        compressPublicAssets: true
+    }
 })

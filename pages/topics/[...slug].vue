@@ -18,21 +18,20 @@ technos.map((element) => {
 const posts = await queryContent().where({ topics: { $contains: slug.value }}).only('path').find()
 
 const query = { where: { topics: { $contains: slug.value } }, limit: 10, sort: { date: -1 }, only: ['title', 'description', 'tags', '_path', 'date'] }
-
 </script>
 
 <template>
   <div>
     <Head>
-      <Title>{{ techno.name }} — DenisAKP</Title>
-      <Meta name="title" :content="techno.name +' — DenisAKP'" />
+      <Title>DenisAKP — {{ techno.name }}</Title>
+      <Meta name="title" :content="'DenisAKP — ' + techno.name" />
       <Meta name="description" :content="techno.description" />
       <Meta name="keywords" :content="'denisakp,' + slug" />
       <Meta name="og:description" :content="techno.description" />
-      <Meta name="og:title" :content="techno.name +' — DenisAKP'" />
+      <Meta name="og:title" :content="'DenisAKP — ' +techno.name" />
       <Meta name="og:image" :content="techno.image" />
       <Meta name="twitter:image" :content="techno.image" />
-      <Meta name="twitter:tile" :content="techno.name +' — DenisAKP'" />
+      <Meta name="twitter:tile" :content="'DenisAKP — ' +techno.name" />
       <Meta name="twitter:description" :content="techno.description" />
     </Head>
 
@@ -68,7 +67,8 @@ const query = { where: { topics: { $contains: slug.value } }, limit: 10, sort: {
             </template>
 
             <template #not-found>
-              <p> Sorry no articles found</p>
+              <br><br><br><br>
+              <p class="text-4xl text-center">No articles yet 😮‍💨 </p>
             </template>
 
             <template #empty>

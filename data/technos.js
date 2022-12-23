@@ -17,31 +17,25 @@ const technos = [
                 "name": "TypeScript",
                 "slug": "typescript",
                 "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg",
-                "description": "JavaScript typé à toutes échelles"
+                "description": "JavaScript typé à toutes échelles."
             },
             {
                 "name": "Python",
                 "slug": "python",
                 "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original-wordmark.svg",
-                "description": "Langage de programmation et de scripting"
+                "description": "Langage de scripting très puissant."
             },
             {
                 "name": "PHP",
                 "slug": "php",
                 "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg",
-                "description": "Langage optimisé pour les applications rapides"
+                "description": "Langage optimisé pour les applications web."
             },
             {
-                "name": "C/C++",
-                "slug": "c-cpp",
-                "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg",
-                "description": "Langage optimisé pour les applications rapides"
-            },
-            {
-                "name": "Rust",
-                "slug": "rust",
-                "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/rust/rust-plain.svg",
-                "description": "Rust est un langage de programmation compilé multi-paradigme qui a été conçu pour être « un langage fiable, concurrent, pratique », supportant les styles de programmation purement fonctionnel, modèle d'acteur, procédural, ainsi qu'orienté objet sous certains aspects"
+                "name": "Golang",
+                "slug": "golang",
+                "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/go/go-original.svg",
+                "description": "Langage inspiré et concurrent du C."
             },
         ]
     },
@@ -52,26 +46,32 @@ const technos = [
                 "name": "Laravel",
                 "slug": "laravel",
                 "image": "/images/techs/laravel.svg",
-                "description": "Laravel est un framework web open-source écrit en PHP respectant le principe modèle-vue-contrôleur et entièrement développé en programmation orientée objet."
+                "description": "Framework web PHP basé sur le principe MVC."
             },
             {
                 "name": "Express Js",
                 "slug": "express-js",
                 "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg",
-                "description": "Express.js est un framework pour construire des applications web basées sur Node.js. C'est de fait le framework standard pour le développement de serveur en Node.js ."
+                "description": "Framework JS pour développer sous NodeJS"
             },
 
             {
                 "name": "Nest Js",
                 "slug": "nest-js",
                 "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nestjs/nestjs-plain.svg",
-                "description": "NestJs est un progressive Node.js framework robuste qui vous permet de créer des applications web fiables, efficaces et évolutive."
+                "description": "Framework TypeScript pour développer sous NodeJS."
             },
             {
                 "name": "Fast Api",
                 "slug": "fast-api",
                 "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/fastapi/fastapi-original.svg",
-                "description": "FastAPI est un framework Web pour développer des API RESTful en Python. FastAPI est basé sur Pydantic et des indications de typage pour valider, sérialiser et désérialiser les données, puis générer automatiquement des documents OpenAPI."
+                "description": "Framework Python pour développer des API."
+            },
+            {
+                "name": "Nuxt Js",
+                "slug": "nuxt-js",
+                "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nuxtjs/nuxtjs-original.svg",
+                "description": "Framework Web basé sur VueJS & NodeJS."
             },
         ]
     },
@@ -82,20 +82,26 @@ const technos = [
                 "name": "Jest",
                 "slug": "jest",
                 "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jest/jest-plain.svg",
-                "description": "Framework de test JavaScript"
+                "description": "Outil de tests JavaScript."
             },
             {
                 "name": "PyTest",
                 "slug": "pytest",
                 "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pytest/pytest-original.svg",
-                "description": "Pytest est un framework de test Python utilisé pour écrire divers types de tests logiciels, notamment des tests unitaires, des tests d'intégration, des tests de bout en bout et des tests fonctionnels"
+                "description": "Outil de tests Python."
             },
             {
                 "name": "PHPUnit",
                 "slug": "phpunit",
-                "image": "phpunit.png",
-                "description": "PHPUnit est un framework open source de tests unitaires dédié au langage de programmation PHP. Il permet l'implémentation des tests de régression en vérifiant que les exécutions correspondent aux assertions prédéfinies"
-            }
+                "image": "/images/techs/phpunit.png",
+                "description": "Outil de tests sous PHP."
+            },
+            {
+                "name": "Postman",
+                "slug": "postman",
+                "image": "/images/techs/postman.png",
+                "description": "Outil de tests d'API."
+            },
         ]
     },
     {
@@ -105,13 +111,13 @@ const technos = [
                 "name": "MySQL",
                 "slug": "mysql",
                 "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg",
-                "description": "Système de gestion de base de données relationnelle"
+                "description": "Le SGBD relationnelle conçu par Oracle"
             },
             {
                 "name": "PostgresSQL",
                 "slug": "postgresql",
                 "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg",
-                "description": "Système de gestion de base de données relationnelle"
+                "description": "Le SGBD relationnelle réputé pour sa stabilité."
             },
             {
                 "name": "Redis",
@@ -146,25 +152,19 @@ const technos = [
                 "name": "Kubernetes",
                 "slug": "kubernetes",
                 "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kubernetes/kubernetes-plain.svg",
-                "description": "Système Open source qui offre des fonctionalités permettant d'automatiser le déploiement, la montée en charge  et la mise en oeuvre des containers d'applications sur des clusters de serveurs. "
+                "description": "Outil de déploiement sur des clusters de serveurs. "
             },
             {
                 "name": "Istio",
                 "slug": "istio",
                 "image": "/images/techs/istio.svg",
-                "description": "Plateforme Open source de service Mesh qui permet de contrôler la manière dont les données sont partagées entre les microservices"
+                "description": "Outil de communication entre microservices"
             },
         ]
     },
     {
         "title": "Cloud",
         "techs": [
-            {
-                "name": "Google Cloud",
-                "slug": "google-cloud",
-                "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/googlecloud/googlecloud-original.svg",
-                "description": "Google Cloud: Cloud Computing Services"
-            },
             {
                 "name": "Firebase",
                 "slug": "firebase",
@@ -175,19 +175,19 @@ const technos = [
                 "name": "DigitalOcean",
                 "slug": "digitalocean",
                 "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/digitalocean/digitalocean-original.svg",
-                "description": "Digitalocean est un fournisseur d'infrastructure cloud"
+                "description": "Fournisseur d'infrastructure cloud"
             },
             {
-                "name": "Amazon Web Service (AWS)",
+                "name": "Amazon Web Service",
                 "slug": "aws",
                 "image": "/images/techs/aws.svg",
-                "description": "AWS est une division du géant Américain AMAZON, qui fournit des services de cloud computing à la demande pour des entreprises et même pour patucliers "
+                "description": "Fournisseur de services de cloud."
             },
             {
                 "name": "Terraform",
                 "slug": "terraform",
                 "image": "/images/techs/terraform.svg",
-                "description": "Environnement de logiciel (Infrastructure As Code) qui permet d'automatiser la construction des resources d'une infrastructure de centres de données comme un réseau, des machines virtuelles, des bases de données et bien d'autres. "
+                "description": "Outil d'automatisation de resources."
             },
         ]
     },
@@ -204,32 +204,20 @@ const technos = [
                 "name": "Grafana",
                 "slug": "grafana",
                 "image": "/images/techs/grafana.svg",
-                "description": "Grafana est un logiciel libre qui permet la visualisation de données. Il permet de réaliser des tableaux de bord et des graphiques depuis plusieurs sources dont des bases de données temporelles comme Graphite, InfluxDB et OpenTSDB"
+                "description": "Outil de visualisation de données."
             },
             {
                 "name": "Prometheus",
                 "slug": "prometheus",
                 "image": "/images/techs/prometheus.svg",
-                "description": "Prometheus est un logiciel libre de surveillance informatique et générateur d'alertes. Il enregistre des métriques en temps réel dans une base de données de séries temporelles en se basant sur le contenu de point d'entrée exposé à l'aide du protocole HTTP"
+                "description": "Outil de surveillance et générateur d'alertes."
             },
             {
-                "name": "Elasticsearch (ELK)",
+                "name": "Suite ELK",
                 "slug": "elasticsearch",
                 "image": "/images/techs/elk.svg",
-                "description": "La suite ELK permet d'agréger les journaux de tous systèmes et applications, de les analyser, et de créer des visualisations pour la surveillance des applications et de l'infrastructure, un dépannage plus rapide, l'analytique de la sécurité et bien d'autres fonctionalités"
-            },
-            {
-                "name": "Nginx",
-                "slug": "nginx",
-                "image": "/images/techs/nginx.svg",
-                "description": "Seveur Web, reverse proxy, load balance"
-            },
-            {
-                "name": "Traefik",
-                "slug": "traefik",
-                "image": "/images/techs/traefik.svg",
-                "description": "Traefik est un reverse proxy HTTP moderne et un répartiteur de charge qui facilite le déploiement de micro services. Traefik est gratuit, OpenSource et SelfHosted."
-            },
+                "description": "ElasticSearch, Logstash, Kibana"
+            }
         ]
     },
     {
@@ -245,18 +233,30 @@ const technos = [
                 "name": "Vagrant",
                 "slug": "vagrant",
                 "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vagrant/vagrant-original.svg",
-                "description": "Gestionnaire d'environnement"
-            }
+                "description": "Environnement de développement virtuel."
+            },
+            {
+                "name": "Nginx",
+                "slug": "nginx",
+                "image": "/images/techs/nginx.svg",
+                "description": "Serveur Web, reverse proxy & load balancer"
+            },
+            {
+                "name": "Traefik",
+                "slug": "traefik",
+                "image": "/images/techs/traefik.svg",
+                "description": "Serveur web moderne pour microservices."
+            },
         ]
     },
     {
-        "title": "Editeur | IDE",
+        "title": "Environnement de travail | IDE",
         "techs": [
             {
                 "name": "Jetbrains",
                 "slug": "jetbrains",
                 "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jetbrains/jetbrains-original.svg",
-                "description": "IDE et outils de developpement"
+                "description": "IDE par référence"
             }
         ]
     }

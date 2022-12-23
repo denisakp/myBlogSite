@@ -6,7 +6,6 @@ const {data: navigation } = await useAsyncData("navigation", () => {
 });
 
 const query = { limit: 7, sort: { date: -1 }, only: ['title', 'description', 'tags', '_path', 'date']}
-
 </script>
 
 <template>
@@ -19,14 +18,14 @@ const query = { limit: 7, sort: { date: -1 }, only: ['title', 'description', 'ta
       <Meta name="og:description" content="Je partage gratuitement des articles et tutoriels portant sur les thématique du DevOPS, le cloud Infrastructure & l'ingénierie logicielle." />
       <Meta name="og:title" content="DenisAKP — Tutos en DevOPS, Cloud Infrastructure & Ingénierie logicielle" />
       <Meta name="og:image" :content="config.baseUrl +'/images/meta_image.png'" />
-      <Meta name="twitter:image" :content="config.baseUrl +'/images/meta_image.png'" />
+      <Meta name="twitter:image" :content="config.baseUrl +'/images/meta_image.png'"/>
       <Meta name="twitter:tile" content="DenisAKP — Tutos en DevOPS, Cloud Infrastructure & Ingénierie logicielle" />
       <Meta name="twitter:description" content="Retrouvez gratuitement des articles et tutoriels portant sur les thématique du DevOPS, le cloud Infrastructure & l'ingénierie logicielle." />
     </Head>
     <div class="page-bg">
       <div class="container">
         <div>
-          <h3>Sujets disponibles</h3>
+          <h3>Sujets Disponibles</h3>
           <Topics :topics="navigation" />
         </div>
 
@@ -40,7 +39,8 @@ const query = { limit: 7, sort: { date: -1 }, only: ['title', 'description', 'ta
               </template>
 
               <template #not-found>
-                <p> No articles found</p>
+                <br><br><br><br>
+                  <p class="text-4xl text-center">No articles found 🫣 </p>
               </template>
 
               <template #empty>
@@ -56,6 +56,6 @@ const query = { limit: 7, sort: { date: -1 }, only: ['title', 'description', 'ta
 
 <style scoped>
 .img-cont img {
-  @apply h-full w-full object-cover;
+  @apply h-full w-48 object-cover;
 }
 </style>

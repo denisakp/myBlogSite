@@ -1,5 +1,5 @@
 const config = {
-    baseUrl: "http://localhost:3000",
+    baseUrl: "https://denisakp/me",
     description: "Retrouvez gratuitement des articles et tutoriels portant sur les thématique du DevOPS, le cloud Infrastructure & l'ingénierie logicielle.",
 };
 
