@@ -67,6 +67,12 @@ const technos = [
                 "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/fastapi/fastapi-original.svg",
                 "description": "Framework Python pour développer des API."
             },
+            {
+                "name": "Nuxt Js",
+                "slug": "nuxt-js",
+                "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nuxtjs/nuxtjs-original.svg",
+                "description": "Framework Web basé sur VueJS & NodeJS."
+            },
         ]
     },
     {
