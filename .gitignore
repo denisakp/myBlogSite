@@ -10,3 +10,5 @@ dist
 .idea/
 .vercel/
 .unlighthouse/
+# Local Netlify folder
+.netlify
