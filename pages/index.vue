@@ -25,7 +25,7 @@ const query = { limit: 7, sort: { date: -1 }, only: ['title', 'description', 'ta
     <div class="page-bg">
       <div class="container">
         <div>
-          <h3>`Sujets Disponibles</h3>
+          <h3>Sujets Disponibles</h3>
           <Topics :topics="navigation" />
         </div>
 
