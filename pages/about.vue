@@ -29,12 +29,11 @@ import technos from "../data/technos";
             <!-- <img class="object-fill h-96 w-full" src="" alt="profile"/> -->
 
             <p class="mt-8">
-              Je m'appelle <span class="hightlighted">Denis AKPAGNONITE</span> (denisakp), actuellement en deuxième année du cycle ingénieur, spécialité Sciences de Données &
-              Développement Informatique à l'ESTEM, une école d'ingénieur dans la ville de Casablanca au Maroc. </p>
+              Je m'appelle <span class="hightlighted">Denis AKPAGNONITE</span>, Junior DevOps engineer et actuellement en deuxième année du cycle ingénieur, spécialité Sciences de Données &
+              Développement Informatique à l'ESTEM: une école d'ingénieur dans la ville de Casablanca au Maroc. </p>
 
             <p>Je suis un grand fan des nouvelles technologies et je me spécialise dans <span class="hightlighted">
-            l'architecture, le développement & la maintenance de Backend et le Cloud Infrastructure</span>. Je suis entre temps passionné par:
-
+            l'architecture, le développement & la maintenance de Backend & le Cloud Infrastructure</span>. Je suis entre temps passionné par:
             </p>
 
             <ul class="mt-4 list-disc ml-4 md:ml-6">
@@ -43,7 +42,7 @@ import technos from "../data/technos";
               </p></li>
 
               <li><p class="mt-4">
-                les sujets liés au <span class="hightlighted">Cloud Infrastructure. </span>
+                les sujets liés au <span class="hightlighted">Cloud Infrastructure.</span>
               </p></li>
 
               <li><p class="mt-4">la  <span class="hightlighted">sécurité des logiciels </span> (avant, pendant et après la conception)
@@ -54,11 +53,11 @@ import technos from "../data/technos";
               </p></li>
 
               <li><p class="mt-4">
-                la sécurité des systèmes d'informations
+                la sécurité des données et des systèmes d'informations
               </p></li>
 
               <li><p class="mt-4">
-                le management de vulnérabilités
+                le management & l'automatisation de vulnérabilités
               </p></li>
             </ul>
 
@@ -94,11 +93,19 @@ import technos from "../data/technos";
               />
             </a>
           </div>
-          <div class="md:w-1/2">
-            <h4 class="my-4">Badges</h4>
+        </div>
+
+        <div class="mt-12 md:mt-16">
+          <h4>Mes Badges & certifications</h4>
+          <div class="mt-6 space-y-4 md:space-y-0 grid grid-cols-4 2xl:grid-cols-4 2xl:gap-4 md:grid-cols-4 md:gap-4">
             <a href="https://www.credly.com/badges/6b64fa0a-e2bc-418a-acd9-d7ed71c635e8" target="_blank">
-              <nuxt-img src="/images/isc-candidate.png" alt="ISC Candidate badge" class="h-28 md:h-32 lg:h-44" />
+              <nuxt-img src="https://res.cloudinary.com/dpdwhd6ka/image/upload/v1673275619/Blog/badges/image_fmqofw.png" alt="ISC Candidate badge" class="h-28 md:h-32 lg:h-44" />
             </a>
+
+            <a href="https://api.badgr.io/public/assertions/22JPp_tsRTazEW65LiJPWA?identity__email=akpagnonited%40outlook.com" target="_blank">
+              <nuxt-img src="https://res.cloudinary.com/dpdwhd6ka/image/upload/v1673274348/Blog/badges/assertion-22JPp_tsRTazEW65LiJPWA_n1wa4z.png" alt="ISC Candidate badge" class="h-28 md:h-32 lg:h-44" />
+            </a>
+
           </div>
         </div>
 
