@@ -8,8 +8,9 @@ export default defineNuxtConfig({
     content: {
         highlight: {
             theme: {
-                default: 'monokai',
-                dark: 'min-dark'
+                default: 'material-default',
+                dark: 'material-darker',
+                sepia: 'monokai'
             }
         },
     },
@@ -19,7 +20,7 @@ export default defineNuxtConfig({
     css: [
         '@/assets/styles/main.css',
         '@/assets/styles/typography.css',
-        '@/assets/styles/content.scss'
+        '@/assets/styles/content.scss',
     ],
     nitro: {
         prerender: {
