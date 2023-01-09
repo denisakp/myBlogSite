@@ -76,7 +76,7 @@
 }
 
 .nuxt-content {
-  @apply break-words;
+  @apply break-words prose-stone;
 }
 .hightlighted {
   @apply text-blue dark:text-green font-medium;

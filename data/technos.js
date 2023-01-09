@@ -49,13 +49,6 @@ const technos = [
                 "description": "Framework web PHP basé sur le principe MVC."
             },
             {
-                "name": "Express Js",
-                "slug": "express-js",
-                "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg",
-                "description": "Framework JS pour développer sous NodeJS"
-            },
-
-            {
                 "name": "Nest Js",
                 "slug": "nest-js",
                 "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nestjs/nestjs-plain.svg",
@@ -134,7 +127,7 @@ const technos = [
         ]
     },
     {
-        "title": "DevOps",
+        "title": "Containers & Orchestration",
         "techs": [
             {
                 "name": "Docker",
@@ -163,7 +156,36 @@ const technos = [
         ]
     },
     {
-        "title": "Cloud",
+        "title": "Infrastructure as Code",
+        "techs": [
+            {
+                "name": "Terraform",
+                "slug": "terraform",
+                "image": "/images/techs/terraform.svg",
+                "description": "Outil d'automatisation de resources."
+            },
+            {
+                "name": "Consul",
+                "slug": "consul",
+                "image": "https://www.datocms-assets.com/2885/1620155090-brandhcconsulprimaryattributedcolor.svg",
+                "description": "Outil de mise en réseau de services."
+            },
+            {
+                "name": "Vault",
+                "slug": "vault",
+                "image": "https://www.datocms-assets.com/2885/1620159869-brandvaultprimaryattributedcolor.svg",
+                "description": "Outil d'automatisation de resources."
+            },
+            {
+                "name": "Vagrant",
+                "slug": "vagrant",
+                "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vagrant/vagrant-original.svg",
+                "description": "Environnement de développement virtuel."
+            },
+        ]
+    },
+    {
+        "title": "Cloud Computing",
         "techs": [
             {
                 "name": "Firebase",
@@ -184,11 +206,12 @@ const technos = [
                 "description": "Fournisseur de services de cloud."
             },
             {
-                "name": "Terraform",
-                "slug": "terraform",
-                "image": "/images/techs/terraform.svg",
-                "description": "Outil d'automatisation de resources."
+                "name": "Google Cloud",
+                "slug": "gcp",
+                "image": "/images/techs/gcp.png",
+                "description": "Fournisseur de services de cloud."
             },
+
         ]
     },
     {
@@ -198,7 +221,7 @@ const technos = [
                 "name": "RabbitMQ",
                 "slug": "rabbitmq",
                 "image": "/images/techs/rabbitmq.svg",
-                "description": "Message Queue"
+                "description": "Message Queue system"
             },
             {
                 "name": "Grafana",
@@ -221,31 +244,60 @@ const technos = [
         ]
     },
     {
+        "title": "Monitoring & Observability",
+        "techs": [
+            {
+                "name": "Grafana",
+                "slug": "grafana",
+                "image": "/images/techs/grafana.svg",
+                "description": "Visualisation de logs."
+            },
+            {
+                "name": "Prometheus",
+                "slug": "prometheus",
+                "image": "/images/techs/prometheus.svg",
+                "description": "Outil de monitoring."
+            },
+            {
+                "name": "Fluentd",
+                "slug": "fluentd",
+                "image": "https://www.vectorlogo.zone/logos/fluentd/fluentd-icon.svg",
+                "description": "Unified logging layer"
+            },
+            {
+                "name": "Suite ELK",
+                "slug": "elasticsearch",
+                "image": "/images/techs/elk.svg",
+                "description": "ElasticSearch, Logstash, Kibana"
+            }
+        ]
+    },
+    {
         "title": "Tools",
         "techs": [
             {
                 "name": "Git",
                 "slug": "git",
                 "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg",
-                "description": "Version Control"
-            },
-            {
-                "name": "Vagrant",
-                "slug": "vagrant",
-                "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vagrant/vagrant-original.svg",
-                "description": "Environnement de développement virtuel."
+                "description": "Version Control tool"
             },
             {
                 "name": "Nginx",
                 "slug": "nginx",
                 "image": "/images/techs/nginx.svg",
-                "description": "Serveur Web, reverse proxy & load balancer"
+                "description": "Serveur Web robuste"
             },
             {
                 "name": "Traefik",
                 "slug": "traefik",
                 "image": "/images/techs/traefik.svg",
-                "description": "Serveur web moderne pour microservices."
+                "description": "Modern reverse proxy"
+            },
+            {
+                "name": "Postman",
+                "slug": "postman",
+                "image": "https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg",
+                "description": "API Designing"
             },
         ]
     },
